@@ -1,0 +1,132 @@
+@charset "ISO-8859-1";
+
+.main-content {}
+
+.school-logo-title {
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(15, 0, 64);
+	height: 110px;
+	width: 100%;
+}
+
+.schoolLogo {
+	height: 30px;
+	margin: 10px 10px 10px 110px;
+	cursor: pointer;
+
+}
+
+.school-title {
+	display: flex;
+	flex-direction: column;
+}
+
+.school-title-name {
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	margin-left: 350px;
+	margin-top: 25px;
+	color: white;
+	cursor: pointer;
+
+
+}
+
+.school-sub-title {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-left: 380px;
+	color: rgb(206, 206, 206);
+
+}
+
+.back-button {
+	margin-left: 380px;
+	margin-top: 40px;
+	font-size: 20px;
+
+}
+
+.back-button button {
+	font-size: 15px;
+	width: 70px;
+	border-radius: 5px;
+	background-color: white;
+	height: 30px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.containerLogin {
+	width: 100%;
+	margin: 2% 0%;
+	margin-top: 30px;
+}
+
+.loginContent {
+	width: 77%;
+	margin-left: 11.5%;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logImg img {
+	width: 800px;
+}
+
+.form-body {
+	margin-top: 30px;
+}
+
+.logTitle {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.logSubTitle {
+	font-size: 1em;
+	margin-top: -30px;
+	margin-bottom: 120px;
+}
+
+label {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 20px
+}
+
+.smMsg {
+	color: red;
+	font-weight: 600;
+}
+
+.loginBtn {
+	width: 100%;
+	height: 40px;
+	color: white;
+	font-weight: 600;
+	font-size: 1.4em;
+	background-color: #000565;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+.form-sign{
+	margin-top: 20px;
+}
+
+.sign-up{
+	font-weight: 800;
+	color: #000565;
+	text-decoration: none;
+}

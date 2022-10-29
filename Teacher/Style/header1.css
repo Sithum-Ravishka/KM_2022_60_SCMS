@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+.main-content {}
+
+.school-logo-title {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(15, 0, 64);
+    height: 110px;
+    width: 100%;
+}
+
+.schoolLogo {
+    height: 30px;
+    margin: 10px 10px 10px 110px;
+    cursor: pointer;
+
+}
+
+.school-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-title-name {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: 350px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.school-sub-title {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 380px;
+    color: rgb(206, 206, 206);
+
+}
+
+.back-button {
+    margin-left: 380px;
+    margin-top: 40px;
+    font-size: 20px;
+
+}
+
+.back-button button {
+    font-size: 15px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: white;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
