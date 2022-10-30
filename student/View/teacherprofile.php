@@ -9,9 +9,9 @@ $teacherList=getAllteacher();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Teacher Profile</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/teacherProfile1.css'; ?>
 	</style>
 
    <!-- Search-->
@@ -34,23 +34,23 @@ $teacherList=getAllteacher();
               <!-- Start Body Code -->
         <td>
           <fieldset>
-            <legend>Teacher Profile</legend> 
-            <center>
-                  <b>Find Teacher:</b><input type="text" onkeyup="ajax()" name="name" id="name">
-                  <input type="button" name="" value="Find">
-                </center>
+            <legend class="H1">Teacher Profile</legend> 
+            <div class="send">
+                  <b class="scr">Find Teacher:</b><input type="text" onkeyup="ajax()" name="name" id="name">
+                  <div class="sch"><input type="button" name="" value="Find"></div>
+            </div>
           <div id="myh1" class="">
                   <br>
         <form class="" action="" method="post">
         <?php
                 echo "<table border = 1 width='100%' cellspacing = 0  >
                 <tr align = 'center'>
-                    <td>ID</td>
-                    <td>Name</td>
-                    <td>Email</td>
-                    <td>Mobile</td>
-                    <td>Gender</td>
-                    <td>Date of Birth</td>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
                 </tr>";
                 for($i = 0; $i<count($teacherList); $i++){
                     echo "<tr align = 'center'>

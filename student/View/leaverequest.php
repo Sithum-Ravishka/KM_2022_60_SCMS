@@ -9,9 +9,9 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Request for leave</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/leaverequest.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -30,7 +30,7 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
 
         <td>
             <fieldset>
-                <legend>Request for leave </legend>
+                <legend class="H1">Request for leave </legend>
             <form class="" action="../Controller/leaveCheck.php" onsubmit="return val()" method="post">
                <table>
                 <tr>

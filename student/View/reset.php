@@ -7,9 +7,9 @@ $javascript = "../Script/passval.js";
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Change Password</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/reset.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -30,7 +30,7 @@ $javascript = "../Script/passval.js";
 <td>
 	<form class="" action="../controller/passCheck.php" onsubmit="return val()" method="post">
 		<fieldset>
-			<legend>CHANGE PASSWORD</legend>
+			<legend class="H1">CHANGE PASSWORD</legend>
 			<table>
 				<tr>
 					<td>Current Password:</td>
