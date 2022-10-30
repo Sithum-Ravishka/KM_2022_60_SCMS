@@ -10,7 +10,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Teacher Update</title>
     <style>
 		<?php include '../Style/addTeacher.css'; ?>
 	</style>

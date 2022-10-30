@@ -11,7 +11,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Student Update</title>
     <style>
 		<?php include '../Style/addStudent.css'; ?>
 	</style>

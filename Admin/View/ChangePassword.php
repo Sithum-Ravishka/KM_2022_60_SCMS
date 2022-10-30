@@ -9,7 +9,7 @@ $js = "../Script/ChangPassVal.js";
 
 <head>
 	<meta charset="utf-8">
-	<title>Admin Dashboard</title>
+	<title>Admin Password Change</title>
 	<style>
 		<?php include '../Style/viewProfile.css'; ?>
 	</style>
