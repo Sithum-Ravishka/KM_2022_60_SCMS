@@ -23,9 +23,9 @@ $bookinfo =  viewBookInfo($serialno);
     </div>
 
     <div class="dashboard-table">
-
+    <div class="title">
         <h2><?php echo $title; ?></h2>
-
+    </div>
         <div id="notice">
     <table border="1">
     <tr>

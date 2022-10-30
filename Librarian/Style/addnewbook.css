@@ -3,22 +3,6 @@
     flex-direction: row;
 }
 
-table {
-    width: 200%;
-    text-align: center;
-    margin-left: 120px;
-}
-  
-th {
-    height: 70px;
-    text-align: center;
-}
-
-.title {
-    margin-right: -120px;
-}
-
-
 .dashboard-table{
     margin-top: 10px;
     display: flex;
@@ -28,7 +12,6 @@ th {
     margin-left: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .regImg{
     margin: auto;
 }
@@ -49,6 +32,7 @@ th {
 .form-right{
     margin-left: 20px;
 }
+
 
 .form-button{
     margin-top: -20px;

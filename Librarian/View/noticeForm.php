@@ -6,7 +6,7 @@ include('headerContent.php');
 
 <head>
   <meta charset="utf-8">
-  <title>Add Library Notice</title>
+  <title>Footer</title>
   <style>
     <?php include '../Style/noticeForm.css'; ?>
   </style>
@@ -47,13 +47,11 @@ include('headerContent.php');
 
               <td>
 
-              <br>
+                <br>
 
                 <input type="submit" class="title-notice-same" name="uploadnotice" value="Post">
                 <input type="reset" class="title-notice-same" name="uploadnotice" value="Clear">
-
               </td>
-              
             </tr>
           </table>
           </fieldset>

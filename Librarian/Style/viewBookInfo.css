@@ -4,7 +4,7 @@
 }
 
 table {
-    width: 230%;
+    width: 180%;
     margin-left: -10px;
     text-align: center;
 }
@@ -12,4 +12,8 @@ table {
 th {
     height: 70px;
     text-align: center;
+}
+
+.title {
+    margin-left: 440px;
 }
