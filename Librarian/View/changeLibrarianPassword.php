@@ -7,7 +7,7 @@ include('headerContent.php');
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Change Password</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>

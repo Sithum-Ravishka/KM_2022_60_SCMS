@@ -1,4 +1,4 @@
-<?php $title= "issued Book History.";
+<?php $title= "Issued Books";
 include('headerContent.php');
   include_once('../Model/usersmodel.php');
   $allIssuedBookDetails = viewIssuedBookDetails();
@@ -9,9 +9,9 @@ include('headerContent.php');
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Issued Books</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/issuedBookHistory.css'; ?>
   </style>
 </head>
 
@@ -23,7 +23,9 @@ include('headerContent.php');
 
     <div class="dashboard-table">  
 
-        <td id="main content"><h2 align="center" ><?php echo $title; ?></h2><hr>
+    <div class="title">
+        <h2><?php echo $title; ?></h2>
+    </div>
           <form action="../Controller/" method="post">
           <div id="notice" >
           <table align="center" border="1">
@@ -33,10 +35,6 @@ include('headerContent.php');
                       <th>Book Title</th>
                       <th>Student Id</th>
                       <th>Issued Date</th>
-                      <th>Return Date</th>
-                      <th>Return Status</th>
-                      <th>Fine</th>
-                      <th>Action</th>
                     </tr>
                     <tr>
 
@@ -47,10 +45,6 @@ include('headerContent.php');
                    <td><?php echo $allIssuedBookDetails[$i]['title'] ?></td>
                    <td><?php echo $allIssuedBookDetails[$i]['id'] ?></td>
                    <td><?php echo $allIssuedBookDetails[$i]['issuesdate'] ?></td>
-                   <td><?php echo $allIssuedBookDetails[$i]['returndate'] ?></td>
-                   <td><?php echo $allIssuedBookDetails[$i]['returnstatus'] ?></td>
-                   <td><?php echo $allIssuedBookDetails[$i]['fine'] ?></td>
-                   <td><a href="addFine.php?id=<?php echo $allIssuedBookDetails[$i]['id']?> ?>">Edit</a></td>
                   </tr><?php  } ?>
              </table>
               </div>

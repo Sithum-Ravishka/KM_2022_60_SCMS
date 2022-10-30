@@ -8,7 +8,7 @@ $routine=getAllroutine();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Student Dashboard</title>
+    <title>Class Routine</title>
     <style>
 		<?php include '../Style/routine.css'; ?>
 	</style>
@@ -29,12 +29,17 @@ $routine=getAllroutine();
 
         <!-- Start Body Code -->
 
-
         <td>
           <fieldset>
             
             <legend class="H1">Class Routine</legend>
         <form class="" action="" method="post">
+
+          <!-- image Code -->
+		      	<div class="logImg">
+                <img alt="" src="../images/rauting.png">
+            </div>
+
         <?php
                 echo "<table border = 1 width='100%' cellspacing = 0  >
                 <tr align = 'center'>

@@ -2,43 +2,40 @@
     display: flex;
     flex-direction: row;
 }
+.H1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    text-align: center; 
+    color: #0606b6;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.logImg img {
+	width: 150px;
+}
 
 table {
     width: 100%;
     text-align: center;
     margin-right: 20px;
     margin-top: 55px;
-    border: 6px solid;
     border-color: rgb(32, 32, 121);
 
   }
-  
-  th {
+
+th {
     height: 40px;
-    width: 163px;
-    font-size: 25px;
+    width: 950px;
+    font-size: 20px;
     font-family: 'Times New Roman';
-    border: 4px solid;
+    border: 2px solid;
     border-color: rgb(5, 5, 75);
+    text-align: center;
   }
 
   td{
     font-family: 'Helvetica';
-    border: 3px solid;
+    border: 2px solid;
     border-color: rgb(5, 5, 75);
   }
-
-.H1{
-    font-family: 'Times New Roman';
-    font-size: 40px;
-    text-align: center; 
-    color: #0606b6;
-    font-weight: bold; 
-}
-
-.logImg img {
-	width: 150px;
-    margin-left:490px ;
-}
-
-

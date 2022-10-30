@@ -8,9 +8,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Request Book Info</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/requestBookInfo.css'; ?>
   </style>
 </head>
 
@@ -22,7 +22,9 @@
 
     <div class="dashboard-table"> 
 
-        <h2 align="center" ><?php echo $title; ?></h2>
+    <div class="title">
+        <h2><?php echo $title; ?></h2>
+    </div>
 
           <form action="../Controller/searchBookCheck.php" method="post">
           <div id="notice">

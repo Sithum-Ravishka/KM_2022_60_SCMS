@@ -1,0 +1,43 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+}
+.H1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    text-align: center; 
+    color: #0606b6;
+    font-weight: bold;
+    margin-left: 250px;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 55px;
+    border: 6px solid;
+    border-color: rgb(32, 32, 121);
+    margin-left: 200px;
+
+  }
+  
+  td {
+    height: 40px;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    border-color: rgb(5, 5, 75);
+    font-weight: bold;
+  }
+
+  .logImg img {
+	width: 300px;
+    margin-left:300px;
+    margin-right: 110px;
+    margin-top: 90px;
+}
+.logImg1 img{
+    width: 300px;
+    margin-top: 120px;
+    margin-left:180px;
+  }

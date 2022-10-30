@@ -9,7 +9,7 @@ $studentsinfo = getAllstudentsInfo();
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>View Student List</title>
   <style>
     <?php include '../Style/viewStudentsList.css'; ?>
   </style>

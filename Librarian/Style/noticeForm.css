@@ -16,3 +16,11 @@ th {
 .title {
     margin-left: 480px;
 }
+
+input.title-notice {
+    width: 60.5%;
+}
+
+input.title-notice-same {
+    width: 30%;
+}

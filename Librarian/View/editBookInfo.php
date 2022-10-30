@@ -11,7 +11,7 @@ $_SESSION['serialno'] = $serialno;
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Edit Book Info</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>

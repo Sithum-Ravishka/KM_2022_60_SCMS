@@ -8,7 +8,7 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>My Profile</title>
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>
@@ -31,7 +31,7 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
 
         <td>
             <fieldset>
-                <legend>MY PROFILE</legend>
+                <legend>My Profile</legend>
             <form class="" action="" method="post"> 
                <table>
                <tr>

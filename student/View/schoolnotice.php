@@ -8,9 +8,9 @@ $noticeList=getAllschoolnotice();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>School Notice</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/schoolNotice.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -31,9 +31,13 @@ $noticeList=getAllschoolnotice();
         <td>
             <form method="post" action="">
                 <fieldset>
-                    <legend>School Notice</legend>
+                    <legend class="H1">School Notice</legend>
                     
-       
+       <!-- image Code -->
+       <div class="logImg">
+                <img alt="" src="../images/attention.jpg">
+            </div>
+
             <?php
                 echo "<table  width='100%' cellspacing = 0  >
                 <tr align = 'center'>
@@ -42,7 +46,7 @@ $noticeList=getAllschoolnotice();
                 </tr>";
                 for($i = 0; $i<count($noticeList); $i++){
                     echo "<tr align = 'center'>
-                    <td>{$noticeList[$i]['notice']}</td>
+                    <th>{$noticeList[$i]['notice']}</th>
                     <td>(Time: {$noticeList[$i]['time']})</td>
                  
                 </tr>";

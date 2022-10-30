@@ -8,7 +8,7 @@ $GetNotice = getAllNotice();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Student Dashboard</title>
+    <title>Teacher Notice</title>
     <style>
 		<?php include '../Style/teachernotices.css'; ?>
 	</style>

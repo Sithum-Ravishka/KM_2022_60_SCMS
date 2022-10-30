@@ -40,7 +40,7 @@
             <span class="school-sub-title" >School Content Management System</span>
         </div>
         <div class="back-button">
-            <button  ><a href="../../Home/index.html">Back</a></button>
+            <button  ><a href="../../Home/index.php">Back</a></button>
         </div>
     </div>
     </div>
