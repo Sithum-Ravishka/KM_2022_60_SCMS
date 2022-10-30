@@ -1,12 +1,12 @@
 .sidebar-content{
     width: 300px;
     height: auto;
-    min-height: 600px;
+    min-height: 520px;
     margin-right: 30px;
     background-color: rgb(15, 0, 64);
     padding-right: 10px;
-    margin-top: -20px;
-    padding-top: 40px;
+    margin-top: -0px;
+    padding-top: 20px;
 }
 
 .sidebar-log-information{

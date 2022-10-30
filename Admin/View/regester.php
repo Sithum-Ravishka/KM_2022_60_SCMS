@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Regester</title>
-    <link rel="stylesheet" href="../Style/regester.css">
-    <style media="screen">
-      #error_messege{
-        color: White;
-        font-weight: bold;
-        margin-bottom: 20px;
-        padding: 0px;
-        background: #de0404;
-        text-align: center;
-        font-size: 18px;
-        transition: all 0.5s ease;
-      }
-    </style>
-    <script src="../Script/regester.js"></script>
 
-  </head>
-  <body>
-    <table border="1" cellspacing="0" width="100%" >
-      <tr>
-        <td>
-          <table width="100%">
-            <tr>
-              <td><img height="50px" weight="50px" src="../Resources/logo.png" alt=""></td>
-              <td align = "center"><h1>School Management System</h1></td>
-              <td align = "right">
-                <a href="../../Home/index.html">Back</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table align="center" >
-            <tr>
+<head>
+    <meta charset="utf-8">
+    <title>Admin Login</title>
+    <style>
+        <?php include '../Style/login.css'; ?>
+    </style>
+    <style media="screen">
+        #error_messege {
+            color: White;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 0px;
+            background: #de0404;
+            text-align: center;
+            font-size: 18px;
+            transition: all 0.5s ease;
+        }
+    </style>
+
+    <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- fontawesome css -->
+
+    <script src="../Script/adminloginVal.js"></script>
+</head>
+
+<body>
+
+    <?php include('header1.php'); ?>
+
+
+    <div class="containerLogin">
+
+        <div class="loginContent">
+            <div class="logImg">
+                <img alt="" src="../images/admin-login.png">
+            </div>
+
+            <div class="form-body">
+              
               <td>
                 <form class="" id="myform" action="../Controller/regCheck.php" onsubmit="return validation()" method="post">
                   <fieldset>
@@ -81,17 +84,15 @@
 
                   </fieldset>
                 </form>
-            </td>
+                </div>
+        </div>
+    </div>
 
-          </tr>
-          </table>
-        </td>
-      </tr>
+    <?php include('footer.php'); ?>
 
-      <tr>
-        <td align="center" >Copyright Ⓒ 2021</td>
-      </tr>
 
-    </table>
+</body> 
+
+</html>
   </body>
 </html>

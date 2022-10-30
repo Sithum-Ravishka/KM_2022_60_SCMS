@@ -1,23 +1,36 @@
 <?php
 	$title= "Edit student request";
 	$js = "../Script/editReqValidation.js";
-	include('header.php');
 	include_once('../model/studentModel.php');
   $id = $_GET['id'];
   $updatemyinfo = getRequestUserbyid($id);
   $_SESSION['id'] = $id;
 ?>
-<div id="sidebar" class="">
-                <ul>
-                  <li><a href="addStudent.php">Add Student</a></li>
-                  <li><a href="viewStudent.php">View Student</a></li>
-                  <li><a href="editrequestlist.php">Edit Request</a></li>
-                  <li><a href="dashboard.php">Dashbord</a></li>
-                  <li><a href="../Controller/logout.php">Logout</a></li>
 
-                </ul>
+				  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <style>
+		<?php include '../Style/dashboard.css'; ?>
+	</style>
+
+     <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- fontawesome css -->
+  </head>
+  <body>
+<?php	include('headerContent.php'); ?>
+
+<div class="dashboard-content">
+							<div class="dashboard-sidebar">
+                <?php	include('SidebarStudent.php'); ?>
 							</div>
-              </td>
+
+              <div class="dashboard-table">
+
               <td>
                 <form id="inform" action="../controller/editRequestCheckStudent.php" onsubmit="return validation()" method="post">
 
@@ -82,8 +95,10 @@
             </table>
             </td>
             </tr>
+	  </div>
+	  </div>     
+<?php include('footer.php'); ?>
 
+</body>
+</html>
 
-
-
-            <?php include('footer.php'); ?>

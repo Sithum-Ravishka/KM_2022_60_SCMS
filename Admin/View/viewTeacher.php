@@ -1,20 +1,33 @@
 <?php
 	$title= "view teacher";
 	$js = "../script/TeacherSearch.js";
-	include('header.php');
 	include_once('../model/teacherModel.php');
 	$UsersList = allUserList();
 ?>
-<div id="sidebar" class="">
-                <ul>
-                  <li><a href="addTeacher.php">Add Teacher</a></li>
-                  <li><a href="viewTeacher.php">View Teacher</a></li>
-                  <li><a href="dashboard.php">Dashbord</a></li>
-                  <li><a href="../Controller/logout.php">Logout</a></li>
 
-                </ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <style>
+		<?php include '../Style/dashboard.css'; ?>
+	</style>
+
+     <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- fontawesome css -->
+  </head>
+  <body>
+<?php	include('headerContent.php'); ?>
+
+<div class="dashboard-content">
+							<div class="dashboard-sidebar">
+                <?php	include('SidebarTeacher.php'); ?>
 							</div>
-              </td>
+
+              <div class="dashboard-table">
+
 
               <td>
                 <center><h2>Teacher list</h2>
@@ -59,6 +72,10 @@
       </tr>
 
 
+	  </div>
+	  </div>     
+<?php include('footer.php'); ?>
 
+</body>
+</html>
 
-      <?php include('footer.php'); ?>
