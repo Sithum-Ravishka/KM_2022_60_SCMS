@@ -1,0 +1,92 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-table{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: rgb(7, 0, 79);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+
+.stu-tea-lib{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.teacher {
+    width: 270px;
+    height: 200px;
+    margin-left: 0px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.student{
+    width: 270px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.librarian{
+    width: 270px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.course{
+    width: 270px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.not-lib-lea{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.notice-board{
+    width: 270px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.library-book{
+    width: 270px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.leave-request{
+    width: 270px;
+    height: 200px;
+    margin-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cou{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    text-align: center;
+}
+

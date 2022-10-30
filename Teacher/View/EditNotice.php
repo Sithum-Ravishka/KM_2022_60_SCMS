@@ -79,7 +79,7 @@
             </fieldset>
         </td>
       </tr>
-      <?php include("TeacherFooter.php") ?>
+
     </table>
 
   </body>
