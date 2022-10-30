@@ -12,6 +12,8 @@
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>
+	 <script src="<?=$javascript?>"></script>
+<script src="../Script/BookSearch.js"></script>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -38,7 +40,7 @@
 								<br>
 								<div id="myh1" class="">
 									<?php
-									echo "<table  border = 1 width='100%' cellspacing = 0  >
+									echo "<table  border = 1 width='110%' cellspacing = 0  >
 									<tr align = 'center'>
 											<td>ISBN</td>
 											<td>Title</td>

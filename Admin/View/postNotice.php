@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <title>Admin Dashboard</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/addTeacher.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -27,37 +27,34 @@
               <div class="dashboard-table">
    
 
-              <td>
-                <form  class="" id="inform" action="../Controller/postCheckNotice.php" onsubmit="return validation()" method="post">
-                  <fieldset >
-                    <legend>Notice</legend>
-                      <table align="center">
-												<tr>
-													<td colspan="2">
-														<center>
-														<div id="error_messege">
-														</div>
-													</center>
-												</tr>
-                        
-                        <tr>
-                          <td>
-                            <textarea id="notice" name="notice" rows="8" cols="80" placeholder="Enter notice Here"></textarea>
-                          </td>
-                        </tr>
-                      </table>
-                      <hr>
-                      <center>
-                        <input type="submit" name="submit" value="POST">
-                    </center>
-                  </fieldset>
-                </form>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+            
+      <div class="form-body">
+      <form  class="" id="inform" action="../Controller/postCheckNotice.php" onsubmit="return validation()" method="post">
 
+
+          <legend>Publish Notice</legend>
+
+          <!-- <center>
+                          <div id="error_messege">
+                          </div>
+                        </center> -->
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Notice</label><br>
+            <textarea id="notice" name="notice" rows="7" cols="50" aria-describedby="emailHelp" placeholder="Enter Notice Here" required="required"></textarea>
+          </div>
+
+
+          <br>
+          <div class="form-button">
+          <button type="reset" id="reset" name="reset" value="Reset" class="btn btn-primary" class="loginBtn">Reset</button>
+          <button  type="submit" id="submit" name="submit" value="Submit" class="btn btn-primary" class="loginBtn">Post</button>
+
+          </div>
+      </div>
+      <div class="regImg">
+                <img alt="" src="../Resources/Register-home.png">
+            </div>
 
 
       </div>

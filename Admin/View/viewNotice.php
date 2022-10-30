@@ -25,6 +25,11 @@
 
               <div class="dashboard-table">
 
+              <?php
+	$title= "view notice";
+  include_once('../model/noticeModel.php');
+  $UsersList = allUserList();
+?>
               <td>
                  <center><h3>All Notice</h3></center>
                 <?php

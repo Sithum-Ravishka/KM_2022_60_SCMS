@@ -14,6 +14,9 @@
 		<?php include '../Style/viewLibrarian.css'; ?>
 	</style>
 
+<script src="<?=$javascript?>"></script>
+<script src="../Script/LibrarianSearch.js"></script>
+
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- fontawesome css -->
@@ -29,22 +32,24 @@
               <div class="dashboard-table">
 
               <td>
+			  <div style="margin-left: 450px;">
                 <center><h2>Librarian list</h2>
 									<input type="text" name="name" id="name" onkeyup="ajax()" />
 									<input type="button" name="" value="Search">
 								</center>
+			  </div>
 								<br>
 								<div id="myh1" class="">
 								<?php
-								echo "<table border = 1 width='auto' cellspacing = 0  >
+								echo "<table border = 1 width='175%' cellspacing = 0  >
 								<tr align = 'center'>
-										<th >Id</th>
-										<th>Name</th>
-										<th>Email</th>
-										<th>Mobile</th>
-										<th>Gender</th>
-										<th>DOB</th>
-										<th>Action</th>
+										<td >Id</td>
+										<td>Name</td>
+										<td>Email</td>
+										<td>Mobile</td>
+										<td>Gender</td>
+										<td>DOB</td>
+										<td>Action</td>
 								</tr>";
 								for($i = 0; $i<count($UsersList); $i++){
 										echo "<tr align = 'center'>

@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <title>Admin Dashboard</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/addStudent.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -29,90 +29,120 @@
 							</div>
 
               <div class="dashboard-table">
-              <td>
-                <form id="inform" action="../controller/updateCheckStudent.php" onsubmit="return validation()" method="post">
-
-                <fieldset>
-                  <legend>Update Information</legend>
-                    <table align="center">
-											<tr>
-												<td colspan="2">
-													<center>
-													<div id="error_messege">
-													</div>
-												</center>
-											</tr>
-                      <tr>
-                        <td>Id</td>
-                        <td>:<input id="id" type="text" name="id" disabled value="<?php echo $updatemyinfo['id']; ?>"></td>
-                      </tr>
-                      <tr>
-                        <td>Name</td>
-                        <td>:<input type="text" id="name" name="name" value="<?php echo $updatemyinfo['name']; ?>" placeholder="Enter Full Name"></td>
-                      </tr>
-                      <tr>
-                        <td>Email</td>
-                        <td>:<input type="email" id="email" name="email" value="<?php echo $updatemyinfo['email']; ?>"></td>
-                      </tr>
-                      <tr>
-                        <td>Mobile No</td>
-                        <td>:<input type="text" id="mobile" name="mobile" value="<?php echo $updatemyinfo['mobile']; ?>"></td>
-                      </tr>
 
 
-                      <tr>
-                        <td>Gender</td>
-                        <td>
-                          :<input type="radio" id="gender" name="gender" <?php  if($updatemyinfo['gender']=="male"){?> checked="true" <?php } ?> value="male">Male
+      <div class="form-body">
+      <form id="inform" action="../controller/updateCheckStudent.php" onsubmit="return validation()" method="post">
+
+
+          <legend>Edit Student Profile</legend>
+
+          <!-- <center>
+                          <div id="error_messege">
+                          </div>
+                        </center> -->
+
+
+         <div class="form-set">
+            <div class="form-group">
+              <label for="exampleInputName">Student ID</label>
+              <input id="id" type="text" name="id" disabled value="<?php echo $updatemyinfo['id']; ?>" class="form-control" placeholder="Enter Student ID" required="required">
+            </div>
+          
+            <div class="form-right">
+            <div class="form-group">
+              <label for="exampleInputName">Student Name</label>
+              <input type="text" id="name" name="name" value="<?php echo $updatemyinfo['name']; ?>" class="form-control" placeholder="Enter Student Full Name" required="required">
+            </div>
+            </div>
+          
+
+            <div class="form-right">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Student E-mail</label>
+            <input type="email" id="email" name="email" value="<?php echo $updatemyinfo['email']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Student E-mail" required="required">
+
+          </div>
+          </div>
+          </div>
+
+            <div class="form-set">
+          
+              <div class="form-group">
+                <label for="exampleInputEmail1">Student Mobile No</label>
+                <input type="text" id="mobile" name="mobile" value="<?php echo $updatemyinfo['mobile']; ?>"
+                 class="form-control" aria-describedby="emailHelp" placeholder="Enter Student Mobile No" required="required">
+
+              </div>
+
+            </div>
+          <div class="form-check form-check-inline">
+            <label for="exampleInputEmail1">Student Gender</label>
+            <input type="radio" id="gender" name="gender" <?php  if($updatemyinfo['gender']=="male"){?> checked="true" <?php } ?> value="male" class="form-check-input">
+                             <label class="form-check-label" for="inlineRadio1">Male</label>
                           <input type="radio" id="gender" name="gender"  <?php if($updatemyinfo['gender']=="female"){?> checked="true" <?php } ?>  value="female">Female
                           <input type="radio" id="gender" name="gender" <?php if($updatemyinfo['gender']=="other"){?> checked="true" <?php } ?> value="other">Other
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Date of Birth</td>
-                        <td>:<input type="date" id="dob" name="dob" value="<?php echo $updatemyinfo['dob']; ?>"></td>
-                      </tr>
-                      <tr>
-                        <td>Present Address</td>
-                        <td>:<input type="text" id="p_address" name="p_address" value="<?php echo $updatemyinfo['p_address']; ?>"></td>
-                      </tr>
-                      <tr>
-                        <td>Class</td>
-                        <td>:<select id="classE" name="class">
+          </div>
+
+          <div class="form-set">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Student Date of Birth</label>
+            <input  type="date" id="dob" name="dob" value="<?php echo $updatemyinfo['dob']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Student E-mail" required="required">
+
+          </div>
+
+          <div class="form-right">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Present Address</label>
+            <input type="text" id="p_address" name="p_address" value="<?php echo $updatemyinfo['p_address']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Present Address" required="required">
+
+          </div>
+          </div>
+          </div>
+  <div class="form-set">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Class</label>
+            <select id="classE" name="class">
                             <option <?php  if($updatemyinfo['class']=="Six"){?> selected="true" <?php } ?> value="Six">Six</option>
                             <option <?php  if($updatemyinfo['class']=="Seven"){?> selected="true" <?php } ?> value="Seven">Seven</option>
                             <option <?php  if($updatemyinfo['class']=="Eight"){?> selected="true" <?php } ?> value="Eight">Eight</option>
                             <option <?php  if($updatemyinfo['class']=="Nine"){?> selected="true" <?php } ?> value="Nine">Nine</option>
                             <option <?php  if($updatemyinfo['class']=="Ten"){?> selected="true" <?php } ?> value="Ten">Ten</option>
-                          </select>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Section</td>
-                        <td>:<select id="section" name="section">
+                            </select>
+            </div>
+            <div class="form-right">
+            <div class="form-group">
+            <label for="exampleInputEmail1">Section</label>
+            <select id="section" name="section">
                             <option <?php  if($updatemyinfo['section']=="A"){?> selected="true" <?php } ?> value="A">A</option>
                             <option <?php  if($updatemyinfo['section']=="B"){?> selected="true" <?php } ?> value="B">B</option>
                           </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Roll No</td>
-                        <td>:<input type="text" id="roll" name="roll" value="<?php echo $updatemyinfo['roll']; ?>"></td>
-                      </tr>
-                    </table>
-                    <hr>
-                    <center>
-                      <input type="submit" name="update" value="Update">
+            </div>
+            </div>
+            </div>
+            <div class="form-group">
+            <label for="exampleInputEmail1">Roll No</label>
+            <input type="text" id="roll" name="roll" value="<?php echo $updatemyinfo['roll']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Roll No" required="required">
 
-                  </center>
-                </fieldset>
+          </div>
 
-            </td>
-            </tr>
-            </table>
-            </td>
-            </tr>
+      
+       
+          <br>
+          <div class="form-button">
+          <button type="submit" name="update" value="Update" class="btn btn-primary" class="loginBtn">Submit</button>
+
+          </div>
+      </div>
+      <div class="regImg">
+                <img alt="" src="../Resources/Register-home.png">
+            </div>
+
+
+
+
+
+
 
 
             </div>

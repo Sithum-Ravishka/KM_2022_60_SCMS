@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <title>Admin Dashboard</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/viewProfile.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -27,11 +27,13 @@
 							</div>
 
               <div class="dashboard-table">
+ 
+			  <div class="profile-content">
+				<div class="profile-information">
+					<span class="profile-title">View Profile Information</span>
 
-			  <td>
-								<fieldset>
 								<form class="" id="inform" action="../Controller/editadminCheck.php" onsubmit="return validation()" method="post">
-								<table>
+								<table >
 									<tr>
 										<td colspan="2">
 											<center>
@@ -54,13 +56,19 @@
 
 								</table>
 								<hr>
+								<div class="profile-edit-edit">
 									<input type="submit" name="submit" value="Submit">
+								</div>
 								</form>
 
 
-								</fieldset>
-        </td>
+	
+								</div>
 
+<div class="logImg">
+	<img alt="" src="../Resources/profile.jpg">
+</div>
+</div>
 
 			  </div>
 	  </div>     

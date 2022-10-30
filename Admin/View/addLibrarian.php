@@ -60,7 +60,7 @@
           <div class="form-right">
           <div class="form-group">
             <label for="exampleInputEmail1">Librarian Mobile No</label>
-            <input type="text" id="mobile" name="mobile" class="form-control" aria-describedby="emailHelp" placeholder="Enter Librarian E-mail" required="required">
+            <input type="text" id="mobile" name="mobile" class="form-control" aria-describedby="emailHelp" placeholder="Enter Librarian Mobile No" required="required">
 
           </div>
           </div>

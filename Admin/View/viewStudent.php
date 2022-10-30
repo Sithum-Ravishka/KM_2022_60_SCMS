@@ -15,6 +15,11 @@
 		<?php include '../Style/dashboard.css'; ?>
 	</style>
 
+	 <!-- Search-->
+
+	 <script src="<?=$javascript?>"></script>
+	 <script src="../Script/StudentSearch.js"></script>
+
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- fontawesome css -->
@@ -30,14 +35,16 @@
               <div class="dashboard-table">
 
               <td>
+			  <div style="margin-left: 450px;">
                 <center><h2>Student list</h2>
 									<input type="text" name="name" id="name" onkeyup="ajax()" />
 									<input type="button" name="" value="Search">
 								</center>
+			  </div>
 								<div id="myh1" class="">
 									<br>
 								<?php
-								echo "<table border = 1 width='100%' cellspacing = 0  >
+								echo "<table border = 1 width='150%' cellspacing = 0  >
 								<tr align = 'center'>
 										<td>Id</td>
 										<td>Name</td>

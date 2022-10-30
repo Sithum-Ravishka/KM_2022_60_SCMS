@@ -27,10 +27,11 @@
               <div class="dashboard-table">
 
               <td>
+			  <div style="margin-left: 450px;">
                 <center><h2>Course list</h2></center>
-
+			  </div>
 								<?php
-								echo "<table border = 1 width='100%' cellspacing = 0  >
+								echo "<table border = 1 width='200%' cellspacing = 0  >
 								<tr align = 'center'>
 								    <td>Course ID</td>
 								    <td>Course Name</td>
