@@ -7,7 +7,7 @@ include('headerContent.php');
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Search Book</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>
@@ -44,7 +44,7 @@ include('headerContent.php');
             }
 }
   </script> 
-        <td id="main content"><h2 align="center" ><?php echo $title; ?></h2><hr>
+        <h2><?php echo $title; ?></h2>
           <form action="../View/searchBookCheck.php" method="post" onsubmit="return searchbookinfo()">
           <table align="center">
                     
@@ -54,7 +54,14 @@ include('headerContent.php');
                     </tr>
                     <tr> 
                         <td></td>
-                        <td><input type="submit" name="searchbook" value="Get Book Info"></td>
+
+                        <br>
+
+                        <td>
+                          <br>
+                        <input type="submit" name="searchbook" value="Get Book Info">
+                      
+                        </td>
                     </tr>
              </table>
           </form>

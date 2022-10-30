@@ -1,5 +1,5 @@
 <?php 
-$title= "View Students Librarian Profile";
+$title= "Library Registered Students Profile";
 include('headerContent.php');
 include_once('../Model/usersmodel.php');
 $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
@@ -9,7 +9,7 @@ $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Library Registered Students Profile</title>
   <style>
     <?php include '../Style/viewStudentsList.css'; ?>
   </style>
@@ -22,7 +22,9 @@ $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
     </div>
 
     <div class="dashboard-table">
-        <h2 align="center" ><?php echo $title; ?></h2>
+      <div class="title">
+        <h2><?php echo $title; ?></h2>
+      </div>
                     
     <br>
     <div id="myh1" class="">

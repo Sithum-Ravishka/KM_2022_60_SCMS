@@ -11,7 +11,7 @@ $librarianinfo =  viewLibrarianProfile($librarianid);
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Profile</title>
   <style>
     <?php include '../Style/viewLibrarianProfile.css'; ?>
   </style>

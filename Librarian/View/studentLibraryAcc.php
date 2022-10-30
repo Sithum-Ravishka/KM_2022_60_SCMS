@@ -6,7 +6,7 @@ include('headerContent.php');
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Create Student Library Account</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>
