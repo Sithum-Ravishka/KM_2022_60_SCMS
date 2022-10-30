@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Admin Dashboard</title>
   <style>
-    <?php include '../Style/dashboardHome.css'; ?>
+    <?php include '../Style/register.css'; ?>
   </style>
 
   <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -23,58 +23,58 @@
 
     <div class="dashboard-table">
 
-              <div class="form-body">
-                <form class="" id="myform" action="../Controller/regCheck.php" onsubmit="return validation()" method="post">
+      <div class="form-body">
+        <form class="" id="myform" action="../Controller/regCheck.php" onsubmit="return validation()" method="post">
 
-                    <legend>Admin Register</legend>
+          <legend>Admin Register</legend>
 
-                          <!-- <center>
+          <!-- <center>
                           <div id="error_messege">
                           </div>
                         </center> -->
 
-       
-                      <div class="form-group">
-                        <label for="exampleInputName">Admin ID</label> 
-                        <input type="text" id="id" name="id" value="" class="form-control" 
-                        placeholder="Enter Admin ID" required="required">
-                      </div>
 
-                      <div class="form-group">
-                        <label for="exampleInputName">Admin Name</label> 
-                        <input type="text" id="name"name="name" class="form-control" 
-                        placeholder="Enter Admin Full Name" required="required">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Admin E-mail</label> 
-                        <input type="email" id="email" name="email"  value="" class="form-control" aria-describedby="emailHelp" 
-                        placeholder="Enter Admin E-mail" required="required">
-                       
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label> 
-                        <input type="password" id="password" name="password" value="" class="form-control"
-                         placeholder="Enter Your Password" required="required">
-                    </div>
+          <div class="form-group">
+            <label for="exampleInputName">Admin ID</label>
+            <input type="text" id="id" name="id" value="" class="form-control" placeholder="Enter Admin ID" required="required">
+          </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Confirm Password</label> 
-                        <input type="password" id="repass" name="repass" value="" class="form-control"
-                         placeholder="Enter Your Password" required="required">
-                    </div>
-         
-                    <br>
-                    <button type="submit" id="submit" name="signup" value="SIGN UP" class="loginBtn">LOGIN</button>
-                    <button type="reset" id="reset" name="reset" value="Reset" class="loginBtn">LOGIN</button>
+          <div class="form-group">
+            <label for="exampleInputName">Admin Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter Admin Full Name" required="required">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Admin E-mail</label>
+            <input type="email" id="email" name="email" value="" class="form-control" aria-describedby="emailHelp" placeholder="Enter Admin E-mail" required="required">
 
-              </div>
-                </div>
-        </div>
-  
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" id="password" name="password" value="" class="form-control" placeholder="Enter Your Password" required="required">
+          </div>
 
-    <?php include('footer.php'); ?>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" id="repass" name="repass" value="" class="form-control" placeholder="Enter Your Password" required="required">
+          </div>
+
+          <br>
+          <div class="form-button">
+          <button type="reset" id="reset" name="reset" value="Reset" class="loginBtn">Reset</button>
+          <button type="submit" id="submit" name="signup" value="SIGN UP" class="loginBtn">Register</button>
+
+          </div>
+      </div>
+      <div class="regImg">
+                <img alt="" src="../Resources/Register-home.png">
+            </div>
+    </div>
+  </div>
 
 
-</body> 
+  <?php include('footer.php'); ?>
+
+
+</body>
 
 </html>
