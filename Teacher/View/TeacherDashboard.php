@@ -38,7 +38,7 @@
 
 
                 <td>
-                    <h1>Welcome <?php echo $User['name'];?></h1>
+                    <h3>Welcome to the teacher dashboard <?php echo $User['name'];?></h3>
                 </td>
                 </tr>
 
