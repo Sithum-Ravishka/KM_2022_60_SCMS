@@ -25,44 +25,32 @@
 							</div>
 
               <div class="dashboard-table">
-   
 
-              <td>
-                <form  class="" id="inform" action="../Controller/postCheckNotice.php" onsubmit="return validation()" method="post">
-                  <fieldset >
-                    <legend>Notice</legend>
-                      <table align="center">
-												<tr>
-													<td colspan="2">
-														<center>
-														<div id="error_messege">
-														</div>
-													</center>
-												</tr>
-                        
-                        <tr>
-                          <td>
-                            <textarea id="notice" name="notice" rows="8" cols="80" placeholder="Enter notice Here"></textarea>
-                          </td>
-                        </tr>
-                      </table>
+        <td>
+            <fieldset>
+                <form class="" name="Upload" action="../Controller/UploadNotesCheck.php" method="post" enctype="multipart/form-data" onsubmit="return FileUpload()">
+                    <fieldset>
+                      <legend>Upload Notes</legend>
+                      <input type="file" name="photo"><br>
                       <hr>
+                      <input type="submit" name="submit" value="submit">
+                      <a href="ViewUploadedNotes(Teacher).php"> View Uploaded Notes</a>
                       <center>
-                        <input type="submit" name="submit" value="POST">
-                    </center>
-                  </fieldset>
-                </form>
-              </td>
-            </tr>
-          </table>
+                         <div id="error_messege">
+                         </div>
+                      </center>
+                    </fieldset>
+              
+                  </form>
+            </fieldset>
         </td>
       </tr>
-
-
 
       </div>
 	  </div>     
 <?php include('footer.php'); ?>
 
-</body>
+    </table>
+
+  </body>
 </html>
