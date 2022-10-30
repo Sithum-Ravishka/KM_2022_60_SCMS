@@ -50,19 +50,19 @@
                             <table>
                                 <tr>
                                     <td>ID</td> <br>
-                                    <td>:<input type="number" id="id" name="ID" disabled
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<input type="number" id="id" name="ID" disabled
                                             value="<?php echo $User['id']; ?>">
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>Notice</td>
-                                    <td>:<textarea id="notice" name="notice" rows="8"
-                                            cols="80"><?php echo $User['notice']; ?></textarea></td>
+                                    <td>&nbsp &nbsp &nbsp &nbsp<textarea id="notice" name="notice" rows="5"
+                                            cols="50"><?php echo $User['notice']; ?></textarea></td>
                                 </tr>
                                 <tr>
                                     <td>Time</td>
-                                    <td>:<input type="text" id="times" name="times" disabled
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<input type="text" id="times" name="times" disabled
                                             value="<?php echo $User['time']; ?>"></td>
                                 </tr>
                             </table>

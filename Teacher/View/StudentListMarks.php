@@ -20,7 +20,7 @@
     </style>
 
 
-    <script src="<?=$javascript?>"></script>
+    <script src="../Script/StudentMarksSearch(script).js"></script>
 
 </head>
 

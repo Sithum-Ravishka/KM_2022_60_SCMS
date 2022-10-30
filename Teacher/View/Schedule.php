@@ -39,18 +39,18 @@
 
 
                 </div>
-                <br><br>
+                <br>
                 <td>
                     <fieldset>
                         <form class="" action="" method="post">
                             <table>
                                 <tr>
                                     <td>Teacher's Name</td>
-                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['name'];?></td>
+                                    <td>:<?php echo $User['name'];?></td>
                                 </tr>
                                 <tr>
                                     <td>Subject</td>
-                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['subject'];?></td>
+                                    <td>:<?php echo $User['subject'];?></td>
                                 </tr>
                             </table>
                         </form>

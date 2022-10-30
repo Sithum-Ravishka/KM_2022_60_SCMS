@@ -36,9 +36,9 @@
 
         <div class="dashboard-table">
 
-
-            <h4>Welcome <?php echo $User['name'];?></h4>
-
+            <div>
+                <h4>Welcome <?php echo $User['name'];?></h4>
+            </div>
 
             <div id="maincontent">
                 <h1>
@@ -49,7 +49,7 @@
             </div>
 
             </tr>
-
+            <br>
 
             <div>
                 <div class="stu-marks">

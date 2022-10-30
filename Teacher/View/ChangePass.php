@@ -15,7 +15,7 @@
     <?php include '../Style/dashboard.css';
     ?>
     </style>
-
+    <script src="../Script/ChangePassCheck(script).js"></script>
 
 </head>
 
