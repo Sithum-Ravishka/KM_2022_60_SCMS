@@ -6,7 +6,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Notice List</title>
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>
@@ -25,6 +25,11 @@
 
               <div class="dashboard-table">
 
+              <?php
+	$title= "view notice";
+  include_once('../model/noticeModel.php');
+  $UsersList = allUserList();
+?>
               <td>
                  <center><h3>All Notice</h3></center>
                 <?php

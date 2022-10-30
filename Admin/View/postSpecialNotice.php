@@ -7,7 +7,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title></title>
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>
