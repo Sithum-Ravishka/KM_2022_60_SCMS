@@ -6,9 +6,13 @@
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 79%;
     height: 500px;
+    margin-left: -20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.regImg{
+    margin: auto;
 }
 
 .form-body{

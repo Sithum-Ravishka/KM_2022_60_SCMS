@@ -3,16 +3,41 @@
     flex-direction: row;
 }
 
+
+
 .dashboard-table{
-    width: 100%;
+    width: 90%;
     margin: auto;
     font-size: 18px;
+    height: 480px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* background-color: rgb(7, 0, 79);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.content-home{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+
+}
+
+.home-left{
+    margin-left: 40px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.home-left .home-sub{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 180px;
+    color: rgb(0, 10, 96);
+
+}
 
 .stu-tea-lib{
     display: flex;
@@ -20,6 +45,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: 900;
 }
 
 .teacher {
@@ -61,6 +87,7 @@
     flex-direction: row;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: 900;
 }
 
 .notice-board{
