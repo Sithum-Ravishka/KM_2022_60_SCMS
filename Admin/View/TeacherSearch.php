@@ -36,5 +36,3 @@
 	$response .= "</table>";
 
 	echo $response;
-
-?>
