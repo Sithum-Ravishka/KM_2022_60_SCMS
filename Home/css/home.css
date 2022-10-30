@@ -16,7 +16,7 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} 
 
 .content-home{
     display: flex;

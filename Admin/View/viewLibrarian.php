@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <title>Admin Dashboard</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/viewLibrarian.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -36,15 +36,15 @@
 								<br>
 								<div id="myh1" class="">
 								<?php
-								echo "<table border = 1 width='100%' cellspacing = 0  >
+								echo "<table border = 1 width='auto' cellspacing = 0  >
 								<tr align = 'center'>
-										<td>Id</td>
-										<td>Name</td>
-										<td>Email</td>
-										<td>Mobile</td>
-										<td>Gender</td>
-										<td>DOB</td>
-										<td>Action</td>
+										<th >Id</th>
+										<th>Name</th>
+										<th>Email</th>
+										<th>Mobile</th>
+										<th>Gender</th>
+										<th>DOB</th>
+										<th>Action</th>
 								</tr>";
 								for($i = 0; $i<count($UsersList); $i++){
 										echo "<tr align = 'center'>
