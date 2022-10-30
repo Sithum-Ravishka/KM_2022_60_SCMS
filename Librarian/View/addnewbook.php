@@ -105,7 +105,7 @@ include('headerContent.php');
     <meta charset="utf-8">
     <title>Footer</title>
     <style>
-        <?php include '../Style/dashboard.css'; ?>
+        <?php include '../Style/addnewbook.css'; ?>
     </style>
 
 </head>
@@ -122,7 +122,7 @@ include('headerContent.php');
 
             <br>
 
-            <center><h2>Add New Book</h2></center>
+            <div class="title"><h2>Add New Book</h2></div>
             
             <br>
             
