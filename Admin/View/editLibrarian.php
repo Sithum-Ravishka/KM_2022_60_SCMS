@@ -103,7 +103,7 @@ $_SESSION['id'] = $id;
         </div>
     </div>
     <div class="regImg">
-      <img alt="" src="../Resources/Register-home.png">
+      <img alt="" src="../Resources/libary3.png">
     </div>
 
 
