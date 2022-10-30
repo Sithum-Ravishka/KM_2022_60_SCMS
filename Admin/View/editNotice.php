@@ -15,7 +15,7 @@ $_SESSION['id'] = $id;
   <meta charset="utf-8">
   <title>Notice Update</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/addTeacher.css'; ?>
   </style>
 
   <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -32,7 +32,7 @@ $_SESSION['id'] = $id;
     </div>
 
     <div class="dashboard-table">
-
+    <div class="form-body">
       <td>
         <form id="inform" action="../controller/updateCheckNotice.php" onsubmit="return validation()" method="post">
 
@@ -48,7 +48,7 @@ $_SESSION['id'] = $id;
               </tr>
               <tr>
                 <td>
-                  <textarea id="notice" name="notice" rows="8" cols="80" placeholder="Enter notice Here"><?php echo $updatemyinfo['notice']; ?></textarea>
+                  <textarea id="notice" name="notice" rows="10" cols="50" placeholder="Enter notice Here"><?php echo $updatemyinfo['notice']; ?></textarea>
                 </td>
               </tr>
             </table>
@@ -64,6 +64,10 @@ $_SESSION['id'] = $id;
       </td>
       </tr>
 
+      </div>
+      <div class="regImg">
+        <img alt="" src="../Resources/Register-home.png">
+      </div>
 
     </div>
   </div>
