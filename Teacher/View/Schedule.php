@@ -32,34 +32,30 @@
 
         <div class="dashboard-table">
             <tr>
-            <tr>
-                <td align="Left"><img height="80px" weight="80px" src="../Resources/routine.jpg" alt=""></td>
-                <td align="Center">
-                    <b>
-                        Class Schedule
-                    </b>
+                <div id="maincontent">
+                    <h1>
+                        <center>Class Schedule</center>
+                    </h1>
+
+
+                </div>
+                <br><br>
+                <td>
+                    <fieldset>
+                        <form class="" action="" method="post">
+                            <table>
+                                <tr>
+                                    <td>Teacher's Name</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['name'];?></td>
+                                </tr>
+                                <tr>
+                                    <td>Subject</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['subject'];?></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </fieldset>
                 </td>
-            </tr>
-            <td height="150px" weight="150px">
-
-
-            </td>
-            <td>
-                <fieldset>
-                    <form class="" action="" method="post">
-                        <table>
-                            <tr>
-                                <td>Teacher's Name</td>
-                                <td>:<?php echo $User['name'];?></td>
-                            </tr>
-                            <tr>
-                                <td>Subject</td>
-                                <td>:<?php echo $User['subject'];?></td>
-                            </tr>
-                        </table>
-                    </form>
-                </fieldset>
-            </td>
             </tr>
         </div>
 

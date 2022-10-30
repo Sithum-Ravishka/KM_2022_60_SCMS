@@ -32,48 +32,53 @@
         <div class="dashboard-table">
             <tr>
             <tr>
-                <td align="Left"><img height="80px" weight="80px" src="../Resources/Teacher.jpg" alt=""></td>
+                <div id="maincontent">
+                    <h1>
+                        <center>Teacher Profile</center>
+                    </h1>
 
-            </tr>
-            <td height="150px" weight="150px">
 
+                </div>
 
-            </td>
-            <td>
-                <fieldset>
-                    <legend>PROFILE</legend>
-                    <form class="" action="" method="post">
-                        <table>
-                            <tr>
-                                <td>Name</td>
-                                <td>:<?php echo $User['name'];?></td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>:<?php echo $User['email'];?></td>
-                            </tr>
-                            <tr>
-                                <td>Mobile No.</td>
-                                <td>:<?php echo $User['mobile'];?></td>
-                            </tr>
-                            <tr>
-                                <td>ID</td>
-                                <td>:<?php echo $User['id'];?></td>
-                            </tr>
-                            <tr>
-                                <td>Gender</td>
-                                <td>:<?php echo $User['gender'];?></td>
-                            </tr>
-                            <tr>
-                                <td>Date of Birth</td>
-                                <td>:<?php echo $User['dob'];?></td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <a href="EditProfile.php">Edit Profile</a>
-                    </form>
-                </fieldset>
-            </td>
+                <br>
+                <br>
+
+                <td>
+                    <fieldset>
+
+                        <form class="" action="" method="post">
+                            <table>
+                                <tr>
+                                    <td>ID</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['id'];?></td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['name'];?></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['email'];?></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile No.</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['mobile'];?></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['gender'];?></td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<?php echo $User['dob'];?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <a href="EditProfile.php">Edit Profile</a>
+                        </form>
+                    </fieldset>
+                </td>
             </tr>
         </div>
 

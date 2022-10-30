@@ -16,6 +16,7 @@
     <title>Teacher Dashboard</title>
     <style>
     <?php include '../Style/dashboard.css';
+    ?><?php include '../Style/dashboardHome.css';
     ?>
     </style>
 
@@ -34,17 +35,60 @@
         </div>
 
         <div class="dashboard-table">
-            <table border="1" cellspacing="0" width="80%">
 
 
-                <td>
-                    <h3>Welcome to the teacher dashboard <?php echo $User['name'];?></h3>
-                </td>
-                </tr>
-
-            </table>
+            <h4>Welcome <?php echo $User['name'];?></h4>
 
 
+            <div id="maincontent">
+                <h1>
+                    <center>Teacher Dashboard</center>
+                </h1>
+
+
+            </div>
+
+            </tr>
+
+
+            <div>
+                <div class="stu-marks">
+                    <div class="stumarks">
+                        <a href="StudentListMarks.php"><img height="160px" weight="160px" src="../images/marks.png"
+                                alt=""></a>
+                        <br>
+                        <a href="StudentListMarks.php">Student Marks</a>
+                    </div>
+
+                    <div class="student">
+                        <a href="StudentList.php"><img height="157px" weight="157px" src="../images/StudentsMarks.png"
+                                alt=""></a>
+                        <br>
+                        <a href="StudentList.php">Students List</a>
+                    </div>
+
+                    <div class="not-lib-lea">
+                        <div class="notice-board">
+                            <a href="ViewNotice.php"><img height="160px" weight="160px" src="../images/Noticeboard.png"
+                                    alt=""></a>
+                            <br>
+                            <a href="ViewNotice.php">Notice Board</a>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="cou">
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
         </div>
 
     </div>

@@ -34,40 +34,40 @@
 
 
             <tr>
-            <tr>
-                <td align="Left"><img height="80px" weight="80px" src="../Resources/notice.jpg" alt=""></td>
-                <td align="Center">
-                    <b>
-                        Upload Notices
-                    </b>
-                </td>
-            </tr>
-            <td height="150px" weight="150px">
+                <div id="maincontent">
+                    <h1>
+                        <center>Upload Notice</center>
+                    </h1>
+                </div>
+                <td>
 
-                <fieldset>
-                    <legend>NOTICE</legend>
-                    <form class="" id="Notice" action="../Controller/NoticeCheck.php" method="post"
-                        onsubmit="return Notice()">
-                        <table align="center">
-                            <tr>
-                                <td>
-                                    <textarea id="notice" name="notice" rows="8" cols="80"
-                                        placeholder="Enter notice Here"></textarea>
-                                </td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <center>
-                            <input type="submit" name="submit" value="Submit">
-                            <a href="ViewNotice.php">View Notice</a>
-                        </center>
-                        <center>
-                            <div id="error_messege">
-                            </div>
-                        </center>
-                    </form>
-                </fieldset>
-            </td>
+                    <br><br>
+                <td height="150px" weight="150px">
+
+                    <fieldset>
+
+                        <form class="" id="Notice" action="../Controller/NoticeCheck.php" method="post"
+                            onsubmit="return Notice()">
+                            <table align="center">
+                                <tr>
+                                    <td>
+                                        <textarea id="notice" name="notice" rows="8" cols="80"
+                                            placeholder="Enter Notice Here"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <center>
+                                <input type="submit" name="submit" value="Upload"> &nbsp &nbsp &nbsp
+                                <a href="ViewNotice.php">View Notice</a>
+                            </center>
+                            <center>
+                                <div id="error_messege">
+                                </div>
+                            </center>
+                        </form>
+                    </fieldset>
+                </td>
             </tr>
         </div>
 
