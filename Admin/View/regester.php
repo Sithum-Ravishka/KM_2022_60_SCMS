@@ -2,97 +2,79 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Admin Login</title>
-    <style>
-        <?php include '../Style/login.css'; ?>
-    </style>
-    <style media="screen">
-        #error_messege {
-            color: White;
-            font-weight: bold;
-            margin-bottom: 20px;
-            padding: 0px;
-            background: #de0404;
-            text-align: center;
-            font-size: 18px;
-            transition: all 0.5s ease;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Admin Dashboard</title>
+  <style>
+    <?php include '../Style/register.css'; ?>
+  </style>
 
-    <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- fontawesome css -->
-
-    <script src="../Script/adminloginVal.js"></script>
+  <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- fontawesome css -->
 </head>
 
 <body>
+  <?php include('headerContent.php'); ?>
 
-    <?php include('header1.php'); ?>
-
-
-    <div class="containerLogin">
-
-        <div class="loginContent">
-            <div class="logImg">
-                <img alt="" src="../images/admin-login.png">
-            </div>
-
-            <div class="form-body">
-              
-              <td>
-                <form class="" id="myform" action="../Controller/regCheck.php" onsubmit="return validation()" method="post">
-                  <fieldset>
-                    <legend>REGESTER</legend>
-                    <table>
-                      <tr>
-                        <td colspan="2">
-                          <center>
-                          <div id="error_messege">
-                          </div>
-                        </center>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>ID</td>
-                        <td>: <input type="text" id="id" name="id" value=""></td>
-                      </tr>
-                      <tr>
-                        <td>Name</td>
-                        <td>: <input type="text" id="name"name="name" placeholder="Enter Full Name"></td>
-                      </tr>
-                      <tr>
-                        <td>Email</td>
-                        <td>: <input type="email" id="email" name="email" value=""></td>
-                      </tr>
-                      <tr>
-                        <td>Password</td>
-                        <td>: <input type="password" id="password" name="password" value=""></td>
-                      </tr>
-                      <tr>
-                        <td>Confirm Password</td>
-                        <td>: <input type="password" id="repass" name="repass" value=""></td>
-                      </tr>
-                    </table>
-                    <hr>
-                    <center>
-                      <input type="submit" id="submit" name="signup" value="SIGN UP">
-                      <input type="reset" id="reset" name="reset" value="Reset">
-                      <a href="adminlogin.php">SIGN IN</a>
-                  </center>
-
-                  </fieldset>
-                </form>
-                </div>
-        </div>
+  <div class="dashboard-content">
+    <div class="dashboard-sidebar">
+      <?php include('Sidebar.php'); ?>
     </div>
 
-    <?php include('footer.php'); ?>
+    <div class="dashboard-table">
+
+      <div class="form-body">
+        <form class="" id="myform" action="../Controller/regCheck.php" onsubmit="return validation()" method="post">
+
+          <legend>Admin Register</legend>
+
+          <!-- <center>
+                          <div id="error_messege">
+                          </div>
+                        </center> -->
 
 
-</body> 
+          <div class="form-group">
+            <label for="exampleInputName">Admin ID</label>
+            <input type="text" id="id" name="id" value="" class="form-control" placeholder="Enter Admin ID" required="required">
+          </div>
 
-</html>
-  </body>
+          <div class="form-group">
+            <label for="exampleInputName">Admin Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter Admin Full Name" required="required">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Admin E-mail</label>
+            <input type="email" id="email" name="email" value="" class="form-control" aria-describedby="emailHelp" placeholder="Enter Admin E-mail" required="required">
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" id="password" name="password" value="" class="form-control" placeholder="Enter Your Password" required="required">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" id="repass" name="repass" value="" class="form-control" placeholder="Enter Your Password" required="required">
+          </div>
+
+          <br>
+          <div class="form-button">
+          <button type="reset" id="reset" name="reset" value="Reset" class="loginBtn">Reset</button>
+          <button type="submit" id="submit" name="signup" value="SIGN UP" class="loginBtn">Register</button>
+
+          </div>
+      </div>
+      <div class="regImg">
+                <img alt="" src="../Resources/Register-home.png">
+            </div>
+    </div>
+  </div>
+
+
+  <?php include('footer.php'); ?>
+
+
+</body>
+
 </html>

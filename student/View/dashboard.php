@@ -25,6 +25,7 @@ $title= "Dashboard";
 
               <div class="dashboard-table">
 
+              <!-- Start Body Code -->
               
         <td>
           <h1>Welcome to student page</h1>
@@ -32,7 +33,7 @@ $title= "Dashboard";
 
 
 
-
+<!-- End Body Code -->
 
   </div>
 

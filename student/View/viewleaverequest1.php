@@ -1,10 +1,31 @@
 <?php
 	$title= "leaveRequest";
-	include('header.php');
 	include_once('../model/leaveRequestModel.php');
 	$UsersList = getleavebyid($_COOKIE['id']);
 ?>
-<?php include('sideBar.php'); ?> s
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <style>
+		<?php include '../Style/dashboard.css'; ?>
+	</style>
+
+     <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- fontawesome css -->
+  </head>
+  <body>
+<?php	include('headerContent.php'); ?>
+
+<div class="dashboard-content">
+							<div class="dashboard-sidebar">
+                <?php	include('sideBar.php'); ?>
+							</div>
+
+              <div class="dashboard-table">
+
 						<div id="sidebar" class="">
                 <ul>
                   <li><a href="leaveRequest.php">Student's leave request</a></li>
@@ -52,7 +73,11 @@
       </tr>
 
 
+         
+  </div>
 
+</div>     
+<?php include('footer1.php'); ?>
 
-
-      <?php include('footer.php'); ?>
+</body>
+</html>
