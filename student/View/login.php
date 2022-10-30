@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Admin Login</title>
+    <title>Student Login</title>
     <style>
         <?php include '../Style/login.css'; ?>
     </style>

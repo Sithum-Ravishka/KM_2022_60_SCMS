@@ -8,9 +8,9 @@ $viewmyresult = getUserbyid($_COOKIE['id']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>My Result</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/result.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -29,7 +29,11 @@ $viewmyresult = getUserbyid($_COOKIE['id']);
  
         <td>
             <fieldset>
-                <legend>MY Result</legend>
+                <legend class="H1">My Result</legend>
+
+                <!-- image Code -->
+		      	
+
             <form class="" action="" method="post"> 
                <table>
                <tr>
@@ -45,6 +49,10 @@ $viewmyresult = getUserbyid($_COOKIE['id']);
                </tr>
 
                </table>
+
+               <div class="logImg1">
+                <img alt="" src="../images/gg.jpg">
+            </div>
                
             </form>
             </fieldset>
@@ -54,7 +62,15 @@ $viewmyresult = getUserbyid($_COOKIE['id']);
          
   </div>
 
-</div>     
+            <div class="logImg">
+                <img alt="" src="../images/congr.jpg">
+            </div>
+         
+
+</div>  
+
+         
+
 <?php include('footer1.php'); ?>
 
 </body>

@@ -8,7 +8,7 @@ $viewmyleave = getleavebyid($_COOKIE['id']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>View Leave Request</title>
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>

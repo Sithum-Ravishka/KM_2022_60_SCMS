@@ -8,9 +8,9 @@ $viewhistory = getissuedbook($_COOKIE['id']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Issue Book History</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/issuebook.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -31,7 +31,7 @@ $viewhistory = getissuedbook($_COOKIE['id']);
 
 <td>
             <fieldset>
-                <legend>Issue Book History</legend>
+                <legend class="H1">Issue Book History</legend>
             <form class="" action="" method="post"> 
                <table>
 

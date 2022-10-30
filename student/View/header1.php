@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Login</title>
+    <title>Student Login</title>
     <style>
 		<?php include '../Style/login.css'; ?>
 	</style>
@@ -40,7 +40,7 @@
             <span class="school-sub-title" >School Content Management System</span>
         </div>
         <div class="back-button">
-            <button  ><a href="../../Home/index.html">Back</a></button>
+            <button  ><a href="../../Home/index.php">Back</a></button>
         </div>
     </div>
     </div>

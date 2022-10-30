@@ -9,7 +9,7 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Edit Profile</title>
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>

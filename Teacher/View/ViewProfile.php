@@ -12,9 +12,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Edit Notice</title>
+    <title>View Teacher Profile</title>
     <style>
-    <?php include '../Style/dashboard.css';
+    <?php include '../Style/viewProfile.css';
     ?>
     </style>
 
