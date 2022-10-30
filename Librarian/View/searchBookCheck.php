@@ -9,7 +9,7 @@ include('headerContent.php');
                     <meta charset="utf-8">
                     <title>Footer</title>
                     <style>
-                        <?php include '../Style/dashboard.css'; ?>
+                        <?php include '../Style/searchBookCheck.css'; ?>
                     </style>
                 </head>
 
@@ -33,12 +33,11 @@ if (isset($_POST['searchbook'])) {
         if ($isbnno == getISBN($isbnno)) {
             $getbookinfo = searchBookInfo($isbnno); ?>
 
+            <br>          
+<div class="title">
+    <h2><?php echo $title; ?></h2>
+</div>
             <br>
-            <br>
-            <br>
-            <br>
-
-            <td id="main content"><h2 align="center" ><?php echo $title; ?></h2><hr>
 
             <table align="center" border="1">
                             <tr>

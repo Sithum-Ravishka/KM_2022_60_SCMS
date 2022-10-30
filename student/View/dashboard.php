@@ -6,9 +6,9 @@ $title= "Dashboard";
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Student Dashboard</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/dashbordWelcom.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -25,12 +25,18 @@ $title= "Dashboard";
 
               <div class="dashboard-table">
 
-              <!-- Start Body Code -->
               
-        <td>
-          <h1>Welcome to student page</h1>
-        </td>
+              <!-- Start Body Code -->
 
+              <!-- image Code -->
+            <div class="logImg">
+                <img alt="" src="../images/st wel.jpg">
+            </div>
+
+            <!-- image Code -->
+            <div class="logImg1">
+                <img alt="" src="../images/SCL.jpg">
+            </div>
 
 
 <!-- End Body Code -->

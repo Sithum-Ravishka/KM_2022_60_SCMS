@@ -9,7 +9,7 @@ $booksinfo = getAllBooksInfo();
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>All Books</title>
   <style>
     <?php include '../Style/allBooksInfo.css'; ?>
   </style>

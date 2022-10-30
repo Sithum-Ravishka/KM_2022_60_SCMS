@@ -34,16 +34,15 @@
 
       <div class="special-links">
 
-        <li><a href="viewLibrarianProfile.php">My Profile</a></li>
+        <li><a href="viewLibrarianProfile.php">Profile</a></li>
         <li><a href="addnewbook.php">Add New Book</a></li>
         <li><a href="allBooksInfo.php">All Book Information</a></li>
         <li><a href="viewStudentsList.php">View Students List</a></li>
-        <li><a href="noticeForm.php">New Book Arrival Notice</a></li>
-        <li><a href="studentLibraryAcc.php">Create Student Library Account</a></li>
-        <li><a href="viewAllStudentsLibProfile.php">View Student Library Account</a></li>
-        <!-- <li><a href="issueNewBook.php">Add Issue Book</a></li> -->
-        <li><a href="issuedBookHistory.php">Issue Book History</a></li>
-        <li><a href="searchBookInfo.php">searchBookInfo</a></li>
+        <li><a href="noticeForm.php">Add Library Notices</a></li>
+        <li><a href="studentLibraryAcc.php">Create Student Account</a></li>
+        <li><a href="viewAllStudentsLibProfile.php">View Student Account</a></li>
+        <li><a href="issuedBookHistory.php">Issued Books</a></li>
+        <li><a href="searchBookInfo.php">Search Book</a></li>
         <li><a href="requestBookInfo.php">Request of Book</a></li>
 
 

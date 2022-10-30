@@ -10,7 +10,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Issue Book</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>
@@ -64,15 +64,15 @@
           <table align="center">
                     <tr>
                         <td>Student Id :</td>
-                        <td><input type="text" name="studentroll" id="studentroll" value="<?php echo $id ?>" onkeypress="validation()"><div id="msg1"></div></td>
+                        <td><input type="text" name="studentroll" id="studentroll"  onkeypress="validation()"><div id="msg1"></div></td>
                     </tr>
                     <tr>
                         <td>ISBN Number :</td>
-                        <td><input type="text" name="isbnno" id="isbnno" value="<?php echo  $requestBook['isbn']; ?> " onkeypress="validation()"><div id="msg2"></div></td>
+                        <td><input type="text" name="isbnno" id="isbnno" onkeypress="validation()"><div id="msg2"></div></td>
                     </tr>
                     <tr>
                         <td>Book title :</td>
-                        <td><input type="text" name="title" id="title" value="<?php echo  $requestBook['title']; ?>" onkeypress="validation()"><div id="msg2"></div></td>
+                        <td><input type="text" name="title" id="title"  onkeypress="validation()"><div id="msg2"></div></td>
                     </tr>
                     <tr> 
                         <td></td>

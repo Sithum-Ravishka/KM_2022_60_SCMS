@@ -10,9 +10,9 @@ $bookinfo =  viewBookInfo($serialno);
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Book Info</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/viewBookInfo.css'; ?>
   </style>
 </head>
 
@@ -24,7 +24,7 @@ $bookinfo =  viewBookInfo($serialno);
 
     <div class="dashboard-table">
 
-        <h2 align="center" ><?php echo $title; ?></h2>
+        <h2><?php echo $title; ?></h2>
 
         <div id="notice">
     <table border="1">
@@ -34,8 +34,8 @@ $bookinfo =  viewBookInfo($serialno);
             <th>Author</th>
             <th>Edition</th>
             <th>Categories</th>
-            <th>Book Item No.</th>
-            <th>Preview Book</th>
+            <th>Book Copies</th>
+
         </tr>
         <tr>
             <td><?php echo $bookinfo['isbn']; ?></td>
@@ -44,7 +44,7 @@ $bookinfo =  viewBookInfo($serialno);
             <td><?php echo $bookinfo['edition']; ?></td>
             <td><?php echo $bookinfo['categories']; ?></td>
             <td><?php echo $bookinfo['bookcopy']; ?></td>
-            <td><a href="<?php echo $bookinfo['bookfile']; ?>">Read the Book</a></td>
+
         </tr>
       </table>
           </div>

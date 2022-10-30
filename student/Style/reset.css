@@ -1,0 +1,14 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.H1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    text-align: center; 
+    color: #0606b6;
+    font-weight: bold; 
+}
+
+
