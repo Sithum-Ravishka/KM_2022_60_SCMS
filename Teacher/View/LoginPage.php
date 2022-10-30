@@ -67,10 +67,7 @@
                     <br>
                     <button type="submit" name="submit" value="Submit" class="loginBtn">LOGIN</button>
 
-                    <div class="form-sign">
-                        <span>Don't have an account?</span><a href="Registration.php" style="text-decoration: none;">
-                            <span class="sign-up">Register now</span></a>
-                    </div>
+
                 </form>
             </div>
         </div>

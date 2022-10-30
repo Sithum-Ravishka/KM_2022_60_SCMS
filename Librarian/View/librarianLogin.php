@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Admin Login</title>
+    <title>Login</title>
     <style>
         <?php include '../Style/login.css'; ?>
     </style>
@@ -61,9 +61,7 @@
                     <br>
                     <button type="submit" name="login" value="LOGIN" id="loginbttn" class="loginBtn">LOGIN</button>
 
-                    <div class="form-sign">
-                        <span>Don't have an account?</span><a href="librarianReg.php" style="text-decoration: none;"> <span class="sign-up" >Register now</span></a>
-                    </div>
+
                 </form>
             </div>
         </div>

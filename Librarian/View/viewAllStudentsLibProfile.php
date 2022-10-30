@@ -1,5 +1,5 @@
 <?php 
-$title= "View Students Librarian Profile";
+$title= "Library Registered Students Profile";
 include('headerContent.php');
 include_once('../Model/usersmodel.php');
 $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
@@ -9,9 +9,9 @@ $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Library Registered Students Profile</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/viewStudentsList.css'; ?>
   </style>
 </head>
 
@@ -22,11 +22,10 @@ $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
     </div>
 
     <div class="dashboard-table">
-        <td id="main content"><h2 align="center" ><?php echo $title; ?></h2><hr>
+      <div class="title">
+        <h2><?php echo $title; ?></h2>
+      </div>
                     
-        <script type="text/javascript" src="../js/searchStudentLibProfile.js"></script>
-<input type="text" name="roll" id="roll" onkeypress="ajax()" />
-	<input type="button" name="" value="Search">
     <br>
     <div id="myh1" class="">
     <div id="notice">

@@ -9,9 +9,9 @@ $studentsinfo = getAllstudentsInfo();
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>View Student List</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/viewStudentsList.css'; ?>
   </style>
 </head>
 
@@ -23,11 +23,10 @@ $studentsinfo = getAllstudentsInfo();
 
     <div class="dashboard-table">
 
-      <center><h2 align="center"><?php echo $title; ?></h2></center>
+    <div class="title">
+      <h2><?php echo $title; ?></h2>
+    </div>
 
-        <script type="text/javascript" src="../js/searchStudentlist.js"></script>
-        <input type="text" name="name" id="name" onkeyup="ajax()" />
-        <input type="button" name="" value="Search">
         <br>
         <div id="viewstudentlist">
           <div id="notice">

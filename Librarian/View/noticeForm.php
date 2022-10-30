@@ -1,14 +1,14 @@
-<?php $title= "Add New Book Arrival Notice";
+<?php $title = "Add Library Notice";
 include('headerContent.php');
-   ?>
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Add Library Notice</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/noticeForm.css'; ?>
   </style>
 </head>
 
@@ -19,69 +19,49 @@ include('headerContent.php');
     </div>
 
     <div class="dashboard-table">
-
-<script>
-function bookarrivalnotice(){
-            var Noticetitle = document.getElementById('noticetitle').value;
-            var Noticedetails = document.getElementById('noticedetails').value;
-            var msg="";
-            
-            if(Noticetitle==""){
-                msg+="please write notice title";
-                noticetitle.className="error";
-            }
-            if(Noticedetails==""){
-                msg+="enter noticedetails";
-                noticedetails.className="error";
-            }
-            if(msg==""){
-                return true;
-            }
-            else{
-                document.getElementById('msg1').innerHTML = "please write notice title";
-                document.getElementById('msg2').innerHTML = "enter noticedetails";
-                return false;
-
-            }
-}
-
-            function validation(){
-            var Noticetitle = document.getElementById('noticetitle').value;
-            var Noticedetails = document.getElementById('noticedetails').value;
-            if(Noticetitle!="" && Noticetitle.length >= 12){
-                document.getElementById('msg1').innerHTML="";
-                document.getElementById('noticetitle').className="success";
-            }
-            if(Noticedetails!="" && Noticedetails.length >= 30){
-                document.getElementById('msg2').innerHTML="";
-                document.getElementById('noticedetails').className="success";
-            }
-          }     
-</script>
-        <td id="main content"><h2 align="center" ><?php echo $title; ?></h2><hr>
-          <form action="../Controller/noticeCheck.php" method="POST"  onsubmit="return bookarrivalnotice()">
+      <td id="main content">
+        <h2 align="center"><?php echo $title; ?></h2>
+        <hr>
+        <form action="../Controller/noticeCheck.php" method="POST">
           <table align="center">
-                    <tr>
-                        <td>Enter Notice Title :</td>
-                        <td><input type="text" name="noticetitle" id="noticetitle" value=""  onkeypress="validation()"><div id="msg1"></div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Enter Notice Details :</td>
-                        <td><textarea rows="4" cols="50" name="noticedetails" id="noticedetails"  onkeypress="validation()"></textarea><div id="msg2"></div></td>
-                    </tr>
-                    
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" name="uploadnotice" value="Upload Notice"></td>
-                    </tr>
-             </table>
-            </fieldset>
-          </form>
-        </td>
+            <tr>
+              <td>Enter Notice Title :</td>
+              <td><input type="text" class="title-notice" name="noticetitle" id="noticetitle" value="">
+                <div id="msg1"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Enter Notice Details :</td>
+              <td>
+                <br>
+                <textarea rows="4" cols="50" name="noticedetails" id="noticedetails"></textarea>
+                <div id="msg2"></div>
+              </td>
+            </tr>
+
+            <br>
+
+            <tr>
+              <td></td>
+
+              <td>
+
+              <br>
+
+                <input type="submit" class="title-notice-same" name="uploadnotice" value="Post">
+                <input type="reset" class="title-notice-same" name="uploadnotice" value="Clear">
+
+              </td>
+              
+            </tr>
+          </table>
+          </fieldset>
+        </form>
+      </td>
       </tr>
-    </table>
-      </div>
+      </table>
+    </div>
   </div>
   <?php include('footer1.php'); ?>
 

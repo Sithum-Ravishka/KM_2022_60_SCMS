@@ -1,0 +1,26 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+}
+
+table {
+    width: 165%;
+    
+}
+  
+th {
+    height: 70px;
+    text-align: center;
+}
+
+.title {
+    margin-left: 480px;
+}
+
+input.title-notice {
+    width: 60.5%;
+}
+
+input.title-notice-same {
+    width: 30%;
+}

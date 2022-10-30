@@ -3,3 +3,9 @@
     flex-direction: row;
 }
 
+table {
+    width: 115%;
+    margin-left: -10px;
+    text-align: center;
+}
+

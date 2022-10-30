@@ -8,7 +8,7 @@ $allnotices = viewAllNotice();
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Dashboard</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>
@@ -30,16 +30,12 @@ $allnotices = viewAllNotice();
 
       <table cellspacing="0" width="100%">
 
-        <tr id="navigation">
-          <td id="pagetitle">
-            <h2><?php echo $title; ?></h2>
-            <hr>
             <div id="maincontent">
               <h1>
-                <center>Welcome to Library</center>
+                <center>NOTICES</center>
               </h1>
 
-              <p>A library is fundamentally an organized set of resources, which include human services as well as the entire spectrum of media (e.g., text, video, hypermedia). Libraries have physical components such as space, equipment, and storage media; intellectual components such as collection policies that determine what materials will be included and organizational schemes that determine how the collection is accessed; and people who manage the physical and intellectual components and interact with users to solve information problems. </p>
+              <p></p>
             </div>
             <div id="notice">
               <center>

@@ -7,7 +7,7 @@ include('headerContent.php');
 
 <head>
   <meta charset="utf-8">
-  <title>Footer</title>
+  <title>Change Password</title>
   <style>
     <?php include '../Style/dashboard.css'; ?>
   </style>
@@ -28,10 +28,20 @@ include('headerContent.php');
             <td>Current Password:</td>
             <td><input type="password" name="password" value=""></td>
           </tr>
+
+          <tr>
+            <td></td>
+          </tr>
+
           <tr>
             <td>New Password:</td>
             <td><input type="password" name="newpassword" value=""></td>
           </tr>
+
+          <tr>
+            <td></td>
+          </tr>
+
           <tr>
             <td>Retype New Password:</td>
             <td><input type="password" name="repassword" value=""></td>

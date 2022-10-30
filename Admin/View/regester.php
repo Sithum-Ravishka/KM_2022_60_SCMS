@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Admin Dashboard</title>
+  <title>Admin Register</title>
   <style>
     <?php include '../Style/register.css'; ?>
   </style>

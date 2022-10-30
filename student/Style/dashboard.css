@@ -1,5 +1,4 @@
-.dashboard-content{
-    display: flex;
-    flex-direction: row;
+.dashboard-content {
+  display: flex;
+  flex-direction: row;
 }
-
