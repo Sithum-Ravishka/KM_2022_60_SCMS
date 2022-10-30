@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <style>
-		<?php include '../Style/Side-bar.css'; ?>
-	</style>
-    <style media="screen">
-    #error_messege{
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    <?php include '../Style/Side-bar.css'; ?>
+  </style>
+  <style media="screen">
+    #error_messege {
       color: White;
       font-weight: bold;
       margin-bottom: 20px;
@@ -16,40 +17,42 @@
       font-size: 18px;
       transition: all 0.5s ease;
     }
-    </style>
+  </style>
 
-     <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-       <!-- fontawesome css -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script src="../Script/adminloginVal.js"></script>
-  </head>
-  <body>
-<div class="sidebar-content">
-<div class="sidebar-log-information"> 
-    <div class="logger-name">
-            <span>Login As</span>
-                <span class="login-name">
-					<a href="viewProfile.php"><?php echo $_COOKIE['name'];?></a>
-            </span>
-            <p>(Admin)</p>
-        </div>
-        </div> 
-  <div class="single-sidebar-widget hidden-md hidden-sm hidden-xs">
+  <script src="../Script/adminloginVal.js"></script>
+</head>
 
-      
-                        <div class="special-links">
+<body>
+  <div class="sidebar-content">
+    <div class="sidebar-log-information">
+      <div class="logger-name">
+        <span>Login As</span>
+        <span class="login-name">
+          <a href="viewProfile.php"><?php echo $_COOKIE['name']; ?></a>
+        </span>
+        <p>(Admin)</p>
+      </div>
+    </div>
+    <div class="single-sidebar-widget hidden-md hidden-sm hidden-xs">
 
-                                <li><a href="Dashboard.php">Dashboard</a></li>
-                                <li><a href="viewProfile.php">View Profile</a></li>
-                                <li><a href="EditProfile.php">Edit Profile</a></li>
-                                <li><a href="ChangePassword.php">Change Password</a></li>
-                                <li><a href="../Controller/logout.php">Logout</a></li>
 
-                        </div>
-                    </div>
+      <div class="special-links">
 
-                    </div>
-  </body>
+        <li><a href="Dashboard.php">Dashboard</a></li>
+        <li><a href="viewProfile.php">View Profile</a></li>
+        <li><a href="EditProfile.php">Edit Profile</a></li>
+        <li><a href="ChangePassword.php">Change Password</a></li>
+        <li><a href="../Controller/logout.php">Logout</a></li>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
