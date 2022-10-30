@@ -7,7 +7,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Leave Request List</title>
     <style>
 		<?php include '../Style/dashboard.css'; ?>
 	</style>
@@ -31,9 +31,11 @@
               <td>
                 <form  class="" action="regCheckCourse.php" method="post">
                   <fieldset >
+				  <div style="margin-left: 450px; margin-top:20px;">
                     <legend>Student's leave request list</legend>
+				  </div>
 										<?php
-										echo "<table border = 1 width='100%' cellspacing = 0  >
+										echo "<table border = 1 width='170%' cellspacing = 0  >
 										<tr align = 'center'>
 		                    <td>ID</td>
 										    <td>Name</td>

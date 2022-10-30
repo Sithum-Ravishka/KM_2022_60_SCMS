@@ -33,46 +33,48 @@
 
         <div class="dashboard-table">
             <tr>
-            <tr>
-                <td align="Left"><img height="80px" weight="80px" src="../Resources/notice.jpg" alt=""></td>
-                <td align="Center">
-                    <b>
-                        Notice Update
-                    </b>
-                </td>
-            </tr>
+                <div id="maincontent">
+                    <h1>
+                        <center>Update Notice</center>
+                    </h1>
+                </div>
+                <td>
 
-            <td>
-                <fieldset>
-                    <legend>EDIT NOTICE</legend>
-                    <form class="" id="EditNotice" action="../Controller/UpdateNoticeCheck.php" method="post"
-                        onsubmit="return Notice()">
-                        <table>
-                            <tr>
-                                <td>ID</td>
-                                <td>:<input type="number" id="id" name="ID" disabled value="<?php echo $User['id']; ?>">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Notice</td>
-                                <td>:<textarea id="notice" name="notice" rows="8"
-                                        cols="80"><?php echo $User['notice']; ?></textarea></td>
-                            </tr>
-                            <tr>
-                                <td>Time</td>
-                                <td>:<input type="text" id="times" name="times" disabled
-                                        value="<?php echo $User['time']; ?>"></td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <input type="submit" name="update" value="Update">
-                        <center>
-                            <div id="error_messege">
-                            </div>
-                        </center>
-                    </form>
-                </fieldset>
-            </td>
+                    <br><br>
+
+                <td>
+                    <fieldset>
+
+                        <form class="" id="EditNotice" action="../Controller/UpdateNoticeCheck.php" method="post"
+                            onsubmit="return Notice()">
+                            <table>
+                                <tr>
+                                    <td>ID</td> <br>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<input type="number" id="id" name="ID" disabled
+                                            value="<?php echo $User['id']; ?>">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Notice</td>
+                                    <td>&nbsp &nbsp &nbsp &nbsp<textarea id="notice" name="notice" rows="5"
+                                            cols="50"><?php echo $User['notice']; ?></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>Time</td>
+                                    <td>&nbsp &nbsp:&nbsp &nbsp<input type="text" id="times" name="times" disabled
+                                            value="<?php echo $User['time']; ?>"></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <input type="submit" name="update" value="Update">
+                            <center>
+                                <div id="error_messege">
+                                </div>
+                            </center>
+                        </form>
+                    </fieldset>
+                </td>
             </tr>
 
             </table>

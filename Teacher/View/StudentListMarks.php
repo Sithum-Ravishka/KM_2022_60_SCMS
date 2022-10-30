@@ -20,6 +20,8 @@
     </style>
 
 
+    <script src="../Script/StudentMarksSearch(script).js"></script>
+
 </head>
 
 <body>
@@ -32,30 +34,28 @@
 
         <div class="dashboard-table">
             <tr>
-            <tr>
-                <td align="Left"><img height="80px" weight="80px" src="../Resources/grades.svg" alt=""></td>
-                <td align="Center">
-                    <b>
-                        Marks List
-                    </b>
-                </td>
-            </tr>
-            <td height="150px" weight="150px">
+                <div id="maincontent">
+                    <h1>
+                        <center>Student Marks</center>
+                    </h1>
 
 
-            </td>
-            <td>
-                <fieldset>
+                </div>
+                <br><br>
 
-                    <form class="" action="" method="post">
-                        <center>
-                            <b>Find Student Marks:</b><input type="text" name="name" id="name">
-                            <input type="button" name="" value="Find" onclick="ajax()">
-                        </center>
-                        <div id="myh1" class="">
-                            <br>
-                            <?php
-								echo "<table border = 1 width='100%' cellspacing = 0  >
+                <td>
+                    <fieldset>
+
+                        <form class="" action="" method="post">
+                            <center>
+                                <input type="text" name="name" id="name" placeholder="Find Students Marks">
+                                <input type="button" name="" value="Find" onclick="ajax()">
+                            </center>
+                            <div id="myh1" class="">
+                                <br>
+                                <?php
+								echo 
+                                "<table border = 5 width='250%' cellspacing = 60  >
 								<tr align = 'center'>
 								    <td>ID</td>
 								    <td>Name</td>
@@ -76,12 +76,11 @@
                     <td> <a href='DeleteMarks.php?id={$MarksList[$i]['id']}'> Delete </a> </td>
 								</tr>";
 								}
-								echo "</table>";
-								?>
-                        </div>
-                    </form>
-                </fieldset>
-            </td>
+								echo "</table>";?>
+                            </div>
+                        </form>
+                    </fieldset>
+                </td>
             </tr>
         </div>
 
@@ -93,7 +92,8 @@
 </html>
 <?php
 
-}else{
+}
+else{
 header('location: LoginPage.php');
 }
 

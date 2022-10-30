@@ -32,24 +32,21 @@
 
         <div class="dashboard-table">
             <tr>
-            <tr>
-                <td align="Left"><img height="100px" weight="100px" src="../Resources/notice.jpg" alt=""></td>
-                <td align="Center">
-                    <b>
-                        View the Notices
-                    </b>
-                </td>
-            </tr>
-            <td height="150px" weight="150px">
+                <div id="maincontent">
+                    <h1>
+                        <center>View the Notices</center>
+                    </h1>
+                </div>
+                <td>
 
+                    <br><br>
 
-            </td>
-            <td>
-                <fieldset>
+                <td>
+                    <fieldset>
 
-                    <form class="" action="" method="post">
-                        <?php
-								echo "<table border = 1 width='100%' cellspacing = 0  >
+                        <form class="" action="" method="post">
+                            <?php
+								echo "<table border = 5 width='190%' cellspacing = 60  >
 								<tr align = 'center'>
 								    <td>ID</td>
 								    <td>Notice</td>
@@ -66,9 +63,9 @@
 								}
 								echo "</table>";
 								?>
-                    </form>
-                </fieldset>
-            </td>
+                        </form>
+                    </fieldset>
+                </td>
             </tr>
             </table>
         </div>

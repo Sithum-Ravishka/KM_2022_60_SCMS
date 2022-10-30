@@ -10,9 +10,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Teacher Update</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/addTeacher.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -28,82 +28,92 @@
 							</div>
 
               <div class="dashboard-table">
-                
-							
-              <td>
-                <form id="inform" action="../controller/updateCheckTeacher.php" onsubmit="return validation()" method="post">
 
-                <fieldset>
-                  <legend>Update Information</legend>
-                    <table align="center">
-											<tr>
-												<td colspan="2">
-													<center>
-													<div id="error_messege">
-													</div>
-												</center>
-											</tr>
-											<tr>
-                        <td>Id</td>
-                        <td>:<input type="text" id="id" name="id" disabled value="<?php echo $updatemyinfo['id']; ?>"></td>
-                      </tr>
-                      <tr>
-                        <td>Name</td>
-                        <td>:<input type="text" id="name" name="name" value="<?php echo $updatemyinfo['name']; ?>" placeholder="Enter Full Name"></td>
-                      </tr>
-                      <tr>
-                        <td>Email</td>
-                        <td>:<input type="email" id="email" name="email" value="<?php echo $updatemyinfo['email']; ?>"></td>
-                      </tr>
-                      <tr>
-                        <td>Mobile No</td>
-                        <td>:<input type="text" id="mobile" name="mobile" value="<?php echo $updatemyinfo['mobile']; ?>"></td>
-                      </tr>
+            
+      <div class="form-body">
+      <form id="inform" action="../controller/updateCheckTeacher.php" onsubmit="return validation()" method="post">
 
 
-                      <tr>
-                        <td>Gender</td>
-                        <td>
-                          :<input type="radio" id="gender" name="gender" <?php  if($updatemyinfo['gender']=="male"){?> checked="true" <?php } ?> value="male">Male
-                          <input type="radio" id="gender" name="gender"  <?php if($updatemyinfo['gender']=="female"){?> checked="true" <?php } ?>  value="female">Female
-                          <input type="radio" id="gender" name="gender" <?php if($updatemyinfo['gender']=="other"){?> checked="true" <?php } ?> value="other">Other
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Date of Birth</td>
-                        <td>:<input type="date" id="dob" name="dob" value="<?php echo $updatemyinfo['dob']; ?>"></td>
-                      </tr>
-											<tr>
-												<td>Subject</td>
-												<td>:<select id="subject" name="subject">
-														<option <?php  if($updatemyinfo['subject']=="Bangla"){?> selected="true" <?php } ?> value="Bangla">Bangla</option>
+          <legend>Update Teacher Profile Information</legend>
+
+          <!-- <center>
+                          <div id="error_messege">
+                          </div>
+                        </center> -->
+
+
+         <div class="form-set">
+            <div class="form-group">
+              <label for="exampleInputName">Teacher ID</label>
+              <input type="text" id="id" name="id" disabled value="<?php echo $updatemyinfo['id']; ?>" class="form-control" placeholder="Enter Teacher ID" required="required">
+            </div>
+          
+            <div class="form-right">
+            <div class="form-group">
+              <label for="exampleInputName">Teacher Name</label>
+              <input type="text" id="name" name="name" value="<?php echo $updatemyinfo['name']; ?>"  class="form-control" placeholder="Enter Teacher Full Name" required="required">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-set">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Teacher E-mail</label>
+            <input type="email" id="email" name="email" value="<?php echo $updatemyinfo['email']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Teacher E-mail" required="required">
+
+          </div>
+          <div class="form-right">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Teacher Mobile No</label>
+            <input type="text" id="mobile" name="mobile" value="<?php echo $updatemyinfo['mobile']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Teacher Mobile No" required="required">
+
+          </div>
+          </div>
+          </div>
+
+          
+          <div class="form-check form-check-inline">
+            <label for="exampleInputEmail1">Teacher Gender</label>
+                             <input type="radio" id="gender" name="gender" <?php  if($updatemyinfo['gender']=="male"){?> checked="true" <?php } ?> value="male"  class="form-check-input">
+                             <label class="form-check-label" for="inlineRadio1">Male</label>
+
+                            <input  type="radio" id="gender" name="gender"  <?php if($updatemyinfo['gender']=="female"){?> checked="true" <?php } ?>  value="female"  class="form-check-input">Female
+                            <input type="radio" id="gender" name="gender" <?php if($updatemyinfo['gender']=="other"){?> checked="true" <?php } ?> value="other"  class="form-check-input">Other
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Teacher Date of Birth</label>
+            <input type="date" id="dob" name="dob" value="<?php echo $updatemyinfo['dob']; ?>" class="form-control" aria-describedby="emailHelp" placeholder="Enter Librarian E-mail" required="required">
+
+          </div>
+
+       
+          <div class="form-group">
+            <label for="exampleInputEmail1">Subject</label>
+              <select id="subject" name="subject">
+														<option <?php  if($updatemyinfo['subject']=="sinhala"){?> selected="true" <?php } ?> value="sinhala">sinhala</option>
 														<option <?php  if($updatemyinfo['subject']=="English"){?> selected="true" <?php } ?> value="English">English</option>
 														<option <?php  if($updatemyinfo['subject']=="Math"){?> selected="true" <?php } ?> value="Math">Math</option>
-														<option <?php  if($updatemyinfo['subject']=="Bangladesh and global studies"){?> selected="true" <?php } ?> value="Bangladesh and global studies">Bangladesh and global studies</option>
-														<option <?php  if($updatemyinfo['subject']=="Religion"){?> selected="true" <?php } ?> value="Religion">Religion</option>
+														<option <?php  if($updatemyinfo['subject']=="History"){?> selected="true" <?php } ?> value="History">History</option>
+														<option <?php  if($updatemyinfo['subject']=="ICT"){?> selected="true" <?php } ?> value="ICT">ICT</option>
 														<option <?php  if($updatemyinfo['subject']=="Physical education and health"){?> selected="true" <?php } ?> value="Physical education and health">Physical education and health</option>
 													</select>
-												</td>
-											</tr>
-                    </table>
-                    <hr>
-                    <center>
-                      <input type="submit" name="update" value="Update">
+            </div>
 
-                  </center>
-                </fieldset>
+          <br>
+          <div class="form-button">
+          <button type="reset" id="reset" name="reset" value="Reset" class="btn btn-primary" class="loginBtn">Reset</button>
+          <button  type="submit" name="update" value="Update" class="btn btn-primary" class="loginBtn">Submit</button>
+
+          </div>
+      </div>
+</form>
+      <div class="regImg">
+                <img alt="" src="../Resources/Register-home.png">
+            </div>
 
 
 
-
-
-
-
-            </td>
-            </tr>
-            </table>
-            </td>
-            </tr>
 
 
 

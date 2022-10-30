@@ -27,7 +27,7 @@ function allUserList(){
 }
 function updateMyInfo($id, $userinfo){
     $conn = getConnection();
-    $sql = "update school_notice set notice='{$userinfo['notice']}'   where id='{$id}'";
+    $sql = "update school_notice set id='{$userinfo['id']}', notice='{$userinfo['notice']}'   where id='{$id}'";
 
     if(mysqli_query($conn, $sql))
 		{
@@ -64,3 +64,4 @@ function getUserbyid($id){
 
 
 ?>
+ 

@@ -6,9 +6,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Course Register</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/addTeacher.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -24,50 +24,55 @@
 							</div>
 
               <div class="dashboard-table">
-								
-              <td>
-                <form id="inform" class="" action="../Controller/addCheckCourse.php" onsubmit="return validation()" method="post">
-                  <fieldset >
-                    <legend>Create Course</legend>
-                      <table align="center">
-												<tr>
-													<td colspan="2">
-														<center>
-														<div id="error_messege">
-														</div>
-													</center>
-												</tr>
-                        <tr>
-                          <td>Course Name</td>
-                          <td>:<input type="text" id="name" name="name" placeholder=""></td>
-                        </tr>
-                        <tr>
-                          <td>Class</td>
-                          <td>:<select id="classE" name="class">
+							
+
+      
+      <div class="form-body">
+      <form id="inform" class="" action="../Controller/addCheckCourse.php" onsubmit="return validation()" method="post">
+
+
+          <legend>Create Course</legend>
+
+          <!-- <center>
+                          <div id="error_messege">
+                          </div>
+                        </center> -->
+
+
+            <div class="form-group">
+              <label for="exampleInputName">Course Name</label>
+              <input input type="text" id="name" name="name" class="form-control" placeholder="Enter Course Name" required="required">
+            </div>
+          
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Description</label><br>
+            <textarea name="description" id="description" rows="7" cols="50" aria-describedby="emailHelp" placeholder="Enter Course Description" required="required"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Class</label>
+            <select id="classE" name="class">
                               <option value="Six">Six</option>
                               <option value="Seven">Seven</option>
                               <option value="Eight">Eight</option>
                               <option value="Nine">Nine</option>
                               <option value="Ten">Ten</option>
                             </select>
-                          </td>
-                        <tr>
-                          <td>Description</td>
-                          <td><textarea name="description" id="description" rows="3" cols="20"></textarea></td>
-                        </tr>
-                      </table>
-                      <hr>
-                      <center>
-                        <input type="submit" name="submit" value="Submit">
-                        <input type="reset" name="reset" value="Reset">
-                    </center>
-                  </fieldset>
-                </form>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+            </div>
+
+          <br>
+          <div class="form-button">
+          <button type="reset" id="reset" name="reset" value="Reset" class="btn btn-primary" class="loginBtn">Reset</button>
+          <button  type="submit" id="submit" name="submit" value="Submit" class="btn btn-primary" class="loginBtn">Create</button>
+
+          </div>
+      </div>
+      <div class="regImg">
+                <img alt="" src="../Resources/course1.jpg">
+            </div>
+
+
 
 
       </div>
