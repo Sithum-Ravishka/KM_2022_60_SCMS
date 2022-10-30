@@ -51,7 +51,7 @@
 
             <div class="not-lib-lea">
               <div class="notice-board">
-                <a href="postNotice.php"><img height="100px" weight="100px" src="../Resources/notice1.jpg" alt=""></a>
+                <a href="postNotice.php"><img height="100px" weight="100px" src="../Resources/note.png" alt=""></a>
                 <br>
                 <a href="postNotice.php">Notice Board</a>
               </div>
@@ -62,9 +62,14 @@
                 <a href="libraryBook.php">Library Book Details</a>
               </div>
               <div class="leave-request">
-                <a href="leaveRequest.php"><img height="100px" weight="100px" src="../Resources/leaverequest.png" alt=""></a>
+                <a href="leaveRequest.php"><img height="100px" weight="100px" src="../Resources/leave.png" alt=""></a>
                 <br>
                 <a href="leaveRequest.php">Leave Request</a>
+              </div>
+              <div class="register-admin">
+                <a href="regester.php"><img height="100px" weight="100px" src="../Resources/signup.png" alt=""></a>
+                <br>
+                <a href="regester.php">Admin Registration </a>
               </div>
 
 
