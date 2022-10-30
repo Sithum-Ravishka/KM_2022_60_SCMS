@@ -9,7 +9,7 @@ $javascript = "../Script/requestbook.js";
     <meta charset="utf-8">
     <title>Request for Books</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/RequestforBooks.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -29,7 +29,7 @@ $javascript = "../Script/requestbook.js";
               <!-- Start Body Code --> 
         <td>
             <fieldset>
-                <legend>Request for Books </legend>
+                <legend class="H1">Request for Books </legend>
               
 
             <form class="" action="" method="post">

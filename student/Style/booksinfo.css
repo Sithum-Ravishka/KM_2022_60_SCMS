@@ -14,7 +14,7 @@
 table {
     width: 100%;
     text-align: center;
-    margin-right: 160px;
+    margin-right: 500px;
     margin-top: 55px;
     border: 6px solid;
     border-color: rgb(32, 32, 121);
@@ -41,6 +41,7 @@ th {
     font-size: 22px;
     font-family: 'Times New Roman';
   }
+
   .sch{
     font-family: 'Times New Roman';
     font-size: 20px;
@@ -53,4 +54,11 @@ th {
   .send{
     display: flex;
     margin-left: 40px;
+    margin-top: 20px;
   }
+
+  .logImg img {
+	width: 800px;
+    margin-left:200px ;
+    margin-top: 30px;
+}

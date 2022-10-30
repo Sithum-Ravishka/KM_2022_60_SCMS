@@ -11,7 +11,7 @@ $bookList=getAllbook();
     <meta charset="utf-8">
     <title>Book Information</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/booksinfo.css'; ?>
 	</style>
 
  <!-- Search-->
@@ -34,20 +34,20 @@ $bookList=getAllbook();
               <!-- Start Body Code --> 
 
         <td>
-            <center><h2>Book Information</h2></center>
-            <center>
-                  <b>Find Book:</b><input type="text" onkeyup="ajax()" name="name" id="name">
-                  <input type="button" name="" value="Find">
-                </center>
+            <center><h2 class="H1">Book Information</h2></center>
+            <div class="send">
+                  <b class="scr">Find Book:</b><input type="text" onkeyup="ajax()" name="name" id="name">
+                  <div class="sch"> <input type="button" name="" value="Find"></div>
+            </div>
           <div id="myh1" class="">
                   <br>
             <?php
                 echo "<table border = 1 width='100%' cellspacing = 0  >
                 <tr align = 'center'>
-                    <td>ISBN</td>
-                    <td>TITLE</td>
-                    <td>AUTHOR</td>
-                    <td>EDTION</td>
+                    <th>ISBN</th>
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>EDTION</th>
                 </tr>";
                 for($i = 0; $i<count($bookList); $i++){
                     echo "<tr align = 'center'>
@@ -62,6 +62,11 @@ $bookList=getAllbook();
                 </div>
        
       </tr>
+
+       <!-- image Code -->
+       <div class="logImg">
+                <img alt="" src="../images/book.jpeg">
+            </div>
        <!-- End Body Code -->
 
   </div>

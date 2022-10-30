@@ -1,0 +1,59 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-table{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 79%;
+    height: 500px;
+    margin-left: -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.regImg{
+    margin: auto;
+}
+
+.form-body{
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+
+}
+
+.form-set{
+    display: flex;
+    flex-direction: row;
+
+}
+.form-right{
+    margin-left: 20px;
+}
+
+
+.form-button{
+    margin-top: -20px;
+    margin-left: 30px;
+}
+
+.form-button button{
+    width: 45%;
+	height: 40px;
+	color: white;
+	font-weight: 600;
+	font-size: 1.4em;
+	background-color: #000565;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.H1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    text-align: center; 
+    color: #0606b6;
+    font-weight: bold; 
+}

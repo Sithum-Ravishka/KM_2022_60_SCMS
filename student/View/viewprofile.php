@@ -10,7 +10,7 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
     <meta charset="utf-8">
     <title>My Profile</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/viewProfile.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -27,11 +27,11 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
 
               <div class="dashboard-table">
 
-
+              <div class="form-body">
 
         <td>
             <fieldset>
-                <legend>My Profile</legend>
+                <legend class="H1">My Profile</legend>
             <form class="" action="" method="post"> 
                <table>
                <tr>
@@ -107,6 +107,11 @@ $viemyinfo = getUserbyid($_COOKIE['id']);
             <a href="edit.php">Edit</a>
         </td>
       </tr>
+
+      </div>
+      <div class="regImg">
+                <img alt="" src="../Resources/profile.jpg">
+            </div>
 
       
   </div>
