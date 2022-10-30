@@ -1,5 +1,5 @@
 <?php 
-$title= "View All Book";
+$title= "All Books";
 include_once('../Model/usersmodel.php');
 include('headerContent.php');
 $booksinfo = getAllBooksInfo();
@@ -11,7 +11,7 @@ $booksinfo = getAllBooksInfo();
   <meta charset="utf-8">
   <title>Footer</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/allBooksInfo.css'; ?>
   </style>
 </head>
 
@@ -26,11 +26,15 @@ $booksinfo = getAllBooksInfo();
        <h2 align="center" ><?php echo $title; ?></h2>
                     
 <script type="text/javascript" src="../js/booksearch.js"></script>
-<input type="text" name="title" id="title" onkeyup="ajax()" />
-	<input type="button" name="" value="Search">
+Book Title:
+   <input type="text" name="title" id="title" onkeyup="ajax()" />
+	 <input type="button" name="" value="Search">
     <br>
     <div id="myh1">
       <div id="notice">
+
+      <br>
+      
     <table border="1">
         <tr>
             <th>Serial No.</th>
@@ -52,9 +56,11 @@ $booksinfo = getAllBooksInfo();
              <td><?php echo $booksinfo[$i]['categories'] ?></td>
              <td><?php echo $booksinfo[$i]['bookcopy'] ?></td>
              <td>
-                  <button><a href="viewBookInfo.php?serialno=<?php echo $booksinfo[$i]['sl']; ?>">View</a></button> |
-                  <button><a href="editBookInfo.php?serialno=<?php echo $booksinfo[$i]['sl']; ?>">Update</a></button> |
-                  <button><a href="deleteBookInfo.php?serialno=<?php echo $booksinfo[$i]['sl']; ?>">Delete</a></button>
+              <h6>
+                  <a href="viewBookInfo.php?serialno=<?php echo $booksinfo[$i]['sl']; ?>">View</a> |
+                  <a href="editBookInfo.php?serialno=<?php echo $booksinfo[$i]['sl']; ?>">Update</a> |
+                  <a href="deleteBookInfo.php?serialno=<?php echo $booksinfo[$i]['sl']; ?>">Delete</a>
+              </h6>
              </td>
          </tr><?php  } ?></div>
              </table>

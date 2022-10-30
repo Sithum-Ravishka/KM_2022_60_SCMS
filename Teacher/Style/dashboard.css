@@ -1,5 +1,10 @@
 .dashboard-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+
+table {
+  border: 50px;
+
+  border-color: rgb(15, 0, 64);
 }

@@ -33,63 +33,64 @@
 
         <div class="dashboard-table">
             <tr>
-            <tr>
-                <td align="Left"><img height="80px" weight="80px" src="../Resources/grades.svg" alt=""></td>
-                <td align="Center">
-                    <b>
-                        Marks Upload
-                    </b>
+                <div id="maincontent">
+                    <h1>
+                        <center>Class Schedule</center>
+                    </h1>
+
+
+                </div>
+                <td height="150px" weight="150px">
+
+
                 </td>
-            </tr>
-            <td height="150px" weight="150px">
+                <td>
+                    <fieldset>
 
-
-            </td>
-            <td>
-                <fieldset>
-
-                    <form class="" id="MarksUpload" action="../Controller/MarksCheck.php" method="post"
-                        onsubmit="return Marks()">
-                        <table align="center">
-                            <tr>
-                                <td>ID</td>
-                                <td>:<input type="number" id="id" name="ID" disabled value="<?php echo $User['id']; ?>">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Name</td>
-                                <td>:<input type="text" id="name" name="name" disabled
-                                        value="<?php echo $User['name']; ?>">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Class</td>
-                                <td>:<input type="text" id="class" name="class" disabled
-                                        value="<?php echo $User['class']; ?>"></td>
-                            </tr>
-                            <tr>
-                                <td>Roll</td>
-                                <td>:<input type="number" id="roll" name="roll" disabled
-                                        value="<?php echo $User['roll']; ?>"></td>
-                            </tr>
-                            <tr>
-                                <td>Update Marks</td>
-                                <td>
-                                    :<input type="text" id="marks" name="marks" value="<?php echo $User['marks']; ?>">
-                                </td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <center>
-                            <input type="submit" name="upload" value="Submit">
-                        </center>
-                        <center>
-                            <div id="error_messege">
-                            </div>
-                        </center>
-                    </form>
-                </fieldset>
-            </td>
+                        <form class="" id="MarksUpload" action="../Controller/MarksCheck.php" method="post"
+                            onsubmit="return Marks()">
+                            <table align="center">
+                                <tr>
+                                    <td>ID</td>
+                                    <td>:<input type="number" id="id" name="ID" disabled
+                                            value="<?php echo $User['id']; ?>">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>:<input type="text" id="name" name="name" disabled
+                                            value="<?php echo $User['name']; ?>">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td>:<input type="text" id="class" name="class" disabled
+                                            value="<?php echo $User['class']; ?>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Roll</td>
+                                    <td>:<input type="number" id="roll" name="roll" disabled
+                                            value="<?php echo $User['roll']; ?>"></td>
+                                </tr>
+                                <tr>
+                                    <td>Update Marks</td>
+                                    <td>
+                                        :<input type="text" id="marks" name="marks"
+                                            value="<?php echo $User['marks']; ?>">
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <center>
+                                <input type="submit" name="upload" value="Submit">
+                            </center>
+                            <center>
+                                <div id="error_messege">
+                                </div>
+                            </center>
+                        </form>
+                    </fieldset>
+                </td>
         </div>
 
     </div>

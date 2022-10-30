@@ -11,7 +11,7 @@ $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
   <meta charset="utf-8">
   <title>Footer</title>
   <style>
-    <?php include '../Style/dashboard.css'; ?>
+    <?php include '../Style/viewStudentsList.css'; ?>
   </style>
 </head>
 
@@ -22,11 +22,8 @@ $viewAllStudentsLibProfile = ViewAllStudentsLibInfo();
     </div>
 
     <div class="dashboard-table">
-        <td id="main content"><h2 align="center" ><?php echo $title; ?></h2><hr>
+        <h2 align="center" ><?php echo $title; ?></h2>
                     
-        <script type="text/javascript" src="../js/searchStudentLibProfile.js"></script>
-<input type="text" name="roll" id="roll" onkeypress="ajax()" />
-	<input type="button" name="" value="Search">
     <br>
     <div id="myh1" class="">
     <div id="notice">

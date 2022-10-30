@@ -8,9 +8,9 @@ $routine=getAllroutine();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard</title>
+    <title>Student Dashboard</title>
     <style>
-		<?php include '../Style/dashboard.css'; ?>
+		<?php include '../Style/routine.css'; ?>
 	</style>
 
      <!-- <link rel="stylesheet" href="application_resources/javascripts/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -32,18 +32,19 @@ $routine=getAllroutine();
 
         <td>
           <fieldset>
-            <legend>Class Routine</legend>
+            
+            <legend class="H1">Class Routine</legend>
         <form class="" action="" method="post">
         <?php
                 echo "<table border = 1 width='100%' cellspacing = 0  >
                 <tr align = 'center'>
-                    <td>Day</td>
-                    <td>10:00-11:00</td>
-                    <td>11:00-12:00</td>
-                    <td>12:00-01:00</td>
-                    <td>01:00-02:00</td>
-                    <td>02:00-03:00</td>
-					<td>03:00-04:00</td>
+                    <th>Day</th>
+                    <th>10:00 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>12:00 - 01:00</th>
+                    <th>01:00 - 02:00</th>
+                    <th>02:00 - 03:00</th>
+					          <th>03:00 - 04:00</th>
                 </tr>";
                 for($i = 0; $i<count($routine); $i++){
                     echo "<tr align = 'center'>

@@ -11,11 +11,10 @@
             <td>
                 <table width="100%">
                     <tr>
-                        <td><img height="40px" weight="40px" src="../Resources/school_logo.png" alt=""></td>
+                        <td><img height="40px" weight="40px" src="../Resources/schoolLogo.png" alt=""></td>
                         <td align="right">
                             <a href="HomePage.php">Home</a>|
-                            <a href="LoginPage.php">Login</a>|
-                            <a href="Registration.php">Registration</a>
+
                         </td>
                     </tr>
                 </table>
@@ -23,7 +22,7 @@
         </tr>
         <tr>
             <td align="center" height="150px" weight="150px" colspan="2">
-                <h1>School Management System</h1>
+                <h1>School Content Management System</h1>
             </td>
         </tr>
         <?php include("TeacherFooter.php") ?>

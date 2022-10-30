@@ -12,7 +12,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Schedule</title>
+    <title>Student List</title>
     <style>
     <?php include '../Style/dashboard.css';
     ?>
@@ -31,32 +31,27 @@
 
         <div class="dashboard-table">
             <tr>
-            <tr>
-
-                <td align="Center">
-                    <b>
-                        Student List
-                    </b>
-                </td>
-            </tr>
-            <td height="150px" weight="150px">
 
 
-            </td>
-            <td>
-                <fieldset>
+                <div id="maincontent">
+                    <h2>
+                        <center>Student List</center>
+                    </h2>
 
-                    <form class="" action="" method="post">
+                    <td>
+                        <fieldset>
 
-                        <center>
-                            <b>Find Student:</b><input type="text" name="name" id="name">
-                            <input type="button" name="" value="Find" onclick="ajax()">
-                        </center>
-                        <div id="myh1" class="">
-                            <br>
+                            <form class="" action="" method="post">
+                                <hr>
 
-                            <?php
-								echo "<table border = 1 width='100%' cellspacing = 0  >
+
+
+                </div>
+                <div id="myh1" class="">
+                    <br>
+
+                    <?php
+								echo "<table border = 5 width='150%' cellspacing = 60   >
 								<tr align = 'center'>
 								    <td>ID</td>
 								    <td>Name</td>
@@ -88,12 +83,12 @@
 								echo "</table>";
 								?>
 
-                        </div>
+                </div>
 
 
-                    </form>
+                </form>
                 </fieldset>
-            </td>
+                </td>
             </tr>
         </div>
 

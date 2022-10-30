@@ -1,0 +1,19 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+}
+
+table {
+    width: 200%;
+    text-align: center;
+    margin-left: 120px;
+}
+  
+th {
+    height: 70px;
+    text-align: center;
+}
+
+.title {
+    margin-right: -120px;
+}
